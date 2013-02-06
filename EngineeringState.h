@@ -1,0 +1,10 @@
+#ifndef ENGINEERINGSTATE_H_INCLUDED
+#define ENGINEERINGSTATE_H_INCLUDED
+
+class EngineeringState {
+
+
+
+};
+
+#endif // ENGINEERINGSTATE_H_INCLUDED
