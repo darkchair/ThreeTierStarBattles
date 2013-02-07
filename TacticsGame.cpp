@@ -13,17 +13,41 @@ TacticsGame::TacticsGame() {
     }
 
     //Randomly place both teams of ships
-    short randLoc = rand() % TACTICS_BOARD_HEIGHT*2;
-    if(randLoc < TACTICS_BOARD_HEIGHT)
-        tilesArray[randLoc*10] = new TacticsTile(shipFriend);
-    else
-        tilesArray[(randLoc-7)*10 + 1] = new TacticsTile(shipFriend);
+    short friendlyCount = 3;
+    short enemyCount = 3;
+    short randLoc;
 
-    randLoc = rand() % TACTICS_BOARD_HEIGHT*2;
-    if(randLoc < TACTICS_BOARD_HEIGHT)
-        tilesArray[randLoc*10 + 9] = new TacticsTile(shipEnemy);
-    else
-        tilesArray[(randLoc-7)*10 + 8] = new TacticsTile(shipEnemy);
+    while(friendlyCount != 0){
+        randLoc = rand() % TACTICS_BOARD_HEIGHT*2;
+        if(randLoc < TACTICS_BOARD_HEIGHT) {
+            if(tilesArray[randLoc*10]->entity->entityType == empty) {
+                tilesArray[randLoc*10] = new TacticsTile(shipFriend);
+                friendlyCount--;
+            }
+        }
+        else {
+            if(tilesArray[(randLoc-7)*10 + 1]->entity->entityType == empty) {
+                tilesArray[(randLoc-7)*10 + 1] = new TacticsTile(shipFriend);
+                friendlyCount--;
+            }
+        }
+    }
+
+    while(enemyCount != 0) {
+        randLoc = rand() % TACTICS_BOARD_HEIGHT*2;
+        if(randLoc < TACTICS_BOARD_HEIGHT) {
+            if(tilesArray[randLoc*10 + 9]->entity->entityType == empty) {
+                tilesArray[randLoc*10 + 9] = new TacticsTile(shipEnemy);
+                enemyCount--;
+            }
+        }
+        else {
+            if(tilesArray[(randLoc-7)*10 + 8]->entity->entityType == empty) {
+                tilesArray[(randLoc-7)*10 + 8] = new TacticsTile(shipEnemy);
+                enemyCount--;
+            }
+        }
+    }
 
 }
 
