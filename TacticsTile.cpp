@@ -5,7 +5,7 @@ TacticsTile::TacticsTile() {
 
     //srand(time(NULL));
 
-    short rando = rand() % 4;
+    short rando = rand() % 7;//probably doesn't work, results don't make sense
     Entity temp;
     if(rando == 0)//About one Quarter of tiles are asteroids, the rest are empty
         temp = (Entity)2;

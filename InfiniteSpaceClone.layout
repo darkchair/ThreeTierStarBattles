@@ -10,23 +10,23 @@
 	<File name="CApp.cpp" open="0" top="0" tabpos="2">
 		<Cursor position="208" topLine="0" />
 	</File>
-	<File name="CApp.h" open="0" top="0" tabpos="1">
-		<Cursor position="740" topLine="21" />
+	<File name="CApp.h" open="1" top="0" tabpos="10">
+		<Cursor position="1448" topLine="26" />
 	</File>
 	<File name="CApp_OnCleanup.cpp" open="0" top="0" tabpos="7">
 		<Cursor position="152" topLine="0" />
 	</File>
-	<File name="CApp_OnEvent.cpp" open="0" top="0" tabpos="4">
-		<Cursor position="1666" topLine="48" />
+	<File name="CApp_OnEvent.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="1759" topLine="48" />
 	</File>
-	<File name="CApp_OnInit.cpp" open="0" top="0" tabpos="3">
-		<Cursor position="70" topLine="0" />
+	<File name="CApp_OnInit.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="2691" topLine="51" />
 	</File>
 	<File name="CApp_OnLoop.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="CApp_OnRender.cpp" open="0" top="0" tabpos="6">
-		<Cursor position="1258" topLine="0" />
+	<File name="CApp_OnRender.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="1526" topLine="18" />
 	</File>
 	<File name="CEvent.cpp" open="0" top="0" tabpos="9">
 		<Cursor position="67" topLine="0" />
@@ -34,7 +34,7 @@
 	<File name="CEvent.h" open="0" top="0" tabpos="8">
 		<Cursor position="247" topLine="0" />
 	</File>
-	<File name="CSurface.cpp" open="0" top="0" tabpos="11">
+	<File name="CSurface.cpp" open="1" top="0" tabpos="11">
 		<Cursor position="52" topLine="0" />
 	</File>
 	<File name="CSurface.h" open="0" top="0" tabpos="10">
@@ -50,7 +50,7 @@
 		<Cursor position="308" topLine="0" />
 	</File>
 	<File name="EnemyInterceptor.h" open="0" top="0" tabpos="10">
-		<Cursor position="357" topLine="0" />
+		<Cursor position="357" topLine="5" />
 	</File>
 	<File name="Engineering.cpp" open="0" top="0" tabpos="16">
 		<Cursor position="26" topLine="0" />
@@ -65,18 +65,18 @@
 		<Cursor position="94" topLine="0" />
 	</File>
 	<File name="TacticsEntity.h" open="1" top="0" tabpos="5">
-		<Cursor position="126" topLine="0" />
+		<Cursor position="121" topLine="0" />
 	</File>
 	<File name="TacticsGame.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="245" topLine="0" />
+		<Cursor position="97" topLine="0" />
 	</File>
 	<File name="TacticsGame.h" open="1" top="1" tabpos="1">
-		<Cursor position="62" topLine="0" />
+		<Cursor position="314" topLine="0" />
 	</File>
 	<File name="TacticsTile.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="102" topLine="0" />
+		<Cursor position="132" topLine="0" />
 	</File>
 	<File name="TacticsTile.h" open="1" top="0" tabpos="3">
-		<Cursor position="230" topLine="0" />
+		<Cursor position="172" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

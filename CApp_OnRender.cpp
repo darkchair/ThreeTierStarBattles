@@ -27,14 +27,14 @@ void CApp::OnRender() {
             //CSurface::OnDraw(Surf_Display, Surf_Asteroids, 300, 200);
             //CSurface::OnDraw(Surf_Display, Surf_OverheadShip, 20, 120);
 
-            TacticsTile*** tacticsMatrix = tacticsGame->getTilesMatrix();
+            TacticsTile** tacticsTilesArray = tacticsGame->getTilesArray();
             for(int i=0; i<TACTICS_BOARD_HEIGHT; i++)
             {
 
                 for(int j=0; j<TACTICS_BOARD_WIDTH; j++)
                 {
-                    TacticsTile* tempT = tacticsMatrix[i][j];
-                    if(tempT->entity->entity == asteroid)
+                    TacticsTile* tempT = tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j];
+                    if(tempT->entity->entityType == asteroid)
                         CSurface::OnDraw(Surf_Display, Surf_Asteroids, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
                     //Else the space is blank
                 }

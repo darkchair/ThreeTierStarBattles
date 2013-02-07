@@ -2,6 +2,7 @@
 #define TACTICSGAME_H_INCLUDED
 
 #include "TacticsTile.h"
+#include <vector>
 
 #define TACTICS_BOARD_HEIGHT 7
 #define TACTICS_BOARD_WIDTH 10
@@ -11,15 +12,14 @@ class TacticsGame {
 
     public:
 
-        TacticsTile* tilesMatrix [TACTICS_BOARD_HEIGHT][TACTICS_BOARD_WIDTH];
-
+        TacticsTile* tilesArray [TACTICS_BOARD_HEIGHT*TACTICS_BOARD_WIDTH];
 
     public:
 
         TacticsGame();
         ~TacticsGame();
 
-        TacticsTile*** getTilesMatrix();
+        TacticsTile** getTilesArray();
 
 };
 

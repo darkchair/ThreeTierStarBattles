@@ -12,7 +12,7 @@ class TacticsEntity {
 
     public:
 
-        Entity entity;
+        Entity entityType;
 
     public:
 

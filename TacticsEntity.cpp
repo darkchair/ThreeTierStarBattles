@@ -2,13 +2,13 @@
 
 TacticsEntity::TacticsEntity() {
 
-    entity = empty;
+    entityType = empty;
 
 }
 
 TacticsEntity::TacticsEntity(Entity en) {
 
-    entity = en;
+    entityType = en;
 
 }
 
