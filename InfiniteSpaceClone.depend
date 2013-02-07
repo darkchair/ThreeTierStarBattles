@@ -2,7 +2,7 @@
 1348513926 source:c:\users\ian\documents\infinitespaceclone\capp_oncleanup.cpp
 	"CApp.h"
 
-1360134112 c:\users\ian\documents\infinitespaceclone\capp.h
+1360199982 c:\users\ian\documents\infinitespaceclone\capp.h
 	<SDL/SDL.h>
 	<SDL/SDL_ttf.h>
 	<time.h>
@@ -11,6 +11,7 @@
 	"CAnimation.h"
 	"EnemyInterceptor.h"
 	"Dialog.h"
+	"TacticsGame.h"
 
 1340130680 c:\users\ian\documents\infinitespaceclone\cevent.h
 	<SDL/SDL.h>
@@ -19,16 +20,16 @@
 	<SDL/SDL.h>
 	<SDL/SDL_image.h>
 
-1360115114 source:c:\users\ian\documents\infinitespaceclone\capp_onevent.cpp
+1360196279 source:c:\users\ian\documents\infinitespaceclone\capp_onevent.cpp
 	"CApp.h"
 
-1360134112 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
+1360199982 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
 	"CApp.h"
 
 1340131028 source:c:\users\ian\documents\infinitespaceclone\capp_onloop.cpp
 	"CApp.h"
 
-1360174467 source:c:\users\ian\documents\infinitespaceclone\capp_onrender.cpp
+1360201939 source:c:\users\ian\documents\infinitespaceclone\capp_onrender.cpp
 	"CApp.h"
 
 1340130801 source:c:\users\ian\documents\infinitespaceclone\cevent.cpp
@@ -280,20 +281,22 @@
 
 1352778350 c:\users\ian\documents\infinitespaceclone\engineeringstate.h
 
-1360179158 source:c:\users\ian\documents\infinitespaceclone\tacticsentity.cpp
+1360197447 source:c:\users\ian\documents\infinitespaceclone\tacticsentity.cpp
 	"TacticsEntity.h"
 
-1360179469 c:\users\ian\documents\infinitespaceclone\tacticsentity.h
+1360198332 c:\users\ian\documents\infinitespaceclone\tacticsentity.h
 
 1360179389 source:c:\users\ian\documents\infinitespaceclone\tacticsgame.cpp
 	"TacticsGame.h"
 
-1360179389 c:\users\ian\documents\infinitespaceclone\tacticsgame.h
+1360201116 c:\users\ian\documents\infinitespaceclone\tacticsgame.h
 	"TacticsTile.h"
 
-1360179139 c:\users\ian\documents\infinitespaceclone\tacticstile.h
+1360197966 c:\users\ian\documents\infinitespaceclone\tacticstile.h
 	"TacticsEntity.h"
+	<time.h>
+	<stdlib.h>
 
-1360179158 source:c:\users\ian\documents\infinitespaceclone\tacticstile.cpp
+1360197842 source:c:\users\ian\documents\infinitespaceclone\tacticstile.cpp
 	"TacticsTile.h"
 

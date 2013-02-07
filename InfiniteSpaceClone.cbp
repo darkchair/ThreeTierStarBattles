@@ -65,6 +65,12 @@
 		<Unit filename="EngineeringState.h" />
 		<Unit filename="Ship.cpp" />
 		<Unit filename="Ship.h" />
+		<Unit filename="TacticsEntity.cpp" />
+		<Unit filename="TacticsEntity.h" />
+		<Unit filename="TacticsGame.cpp" />
+		<Unit filename="TacticsGame.h" />
+		<Unit filename="TacticsTile.cpp" />
+		<Unit filename="TacticsTile.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

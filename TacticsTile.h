@@ -3,6 +3,9 @@
 
 #include "TacticsEntity.h"
 
+#include <time.h>
+#include <stdlib.h>
+
 class TacticsTile {
 
     public:

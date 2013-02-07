@@ -57,7 +57,10 @@ void CApp::OnLButtonDown(int mX, int mY) {
 
     else if(state_tacticsBattle) {
 
-        state_cardSelection = true;
+        if(state_cardSelection)
+            state_cardSelection = false;
+        else
+            state_cardSelection = true;
 
         /*for(int i=0; i<EnemyInterceptor::interceptors.size(); i++) {
 

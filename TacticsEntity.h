@@ -5,7 +5,7 @@
 enum Entity{
     empty,
     ship,
-    asteroids
+    asteroid
 };
 
 class TacticsEntity {
@@ -17,6 +17,7 @@ class TacticsEntity {
     public:
 
         TacticsEntity();
+        TacticsEntity(Entity en);
         ~TacticsEntity();
 
 };

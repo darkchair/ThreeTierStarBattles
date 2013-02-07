@@ -15,3 +15,9 @@ TacticsGame::TacticsGame() {
 TacticsGame::~TacticsGame() {
     //Do nothing
 }
+
+TacticsTile*** TacticsGame::getTilesMatrix() {
+
+    return tilesMatrix;
+
+}

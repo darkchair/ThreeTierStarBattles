@@ -5,6 +5,7 @@
 
 #define TACTICS_BOARD_HEIGHT 7
 #define TACTICS_BOARD_WIDTH 10
+#define TACTICS_BOARD_PIXELS_SIZE 100
 
 class TacticsGame {
 
@@ -17,6 +18,8 @@ class TacticsGame {
 
         TacticsGame();
         ~TacticsGame();
+
+        TacticsTile*** getTilesMatrix();
 
 };
 

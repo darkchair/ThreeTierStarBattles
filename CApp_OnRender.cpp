@@ -5,7 +5,7 @@ void CApp::OnRender() {
         CSurface::OnDraw(Surf_Display, Surf_DialogBackground, 0, 0);
         CSurface::OnDraw(Surf_Display, Surf_DialogBox, 0, 420);
 
-        //If there are more than 9 lines, scrolling needs to happen
+     /*   //If there are more than 9 lines, scrolling needs to happen
         //If there are more than 140 characters on a line, a new line needs to be made
         int i=0;
         while(testDialog->dialog.at(i) != "" && i <= testDialog->currentLine) {
@@ -17,27 +17,30 @@ void CApp::OnRender() {
 
         Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "<Enter>", textColor );
         CSurface::OnDraw(Surf_Display, Surf_TextHolder, 900, 670);
-        SDL_FreeSurface(Surf_TextHolder);
+        SDL_FreeSurface(Surf_TextHolder);*/
     }
     else {
         CSurface::OnDraw(Surf_Display, Surf_Background, 0, 0);
 
         if(state_tacticsBattle) {
             CSurface::OnDraw(Surf_Display, Surf_TacticsGrid, 0, 0);
-            CSurface::OnDraw(Surf_Display, Surf_Asteroids, 300, 200);
-            CSurface::OnDraw(Surf_Display, Surf_OverheadShip, 20, 120);
-            //Coordinate temp = EnemyInterceptor::getPosition(0);
-            //CSurface::OnDraw(Surf_Display, Surf_EnemyShip, temp.x - 100, temp.y - 90);
-            //CSurface::OnDraw(Surf_Display, Surf_InterceptorPanel, 0, 0);
+            //CSurface::OnDraw(Surf_Display, Surf_Asteroids, 300, 200);
+            //CSurface::OnDraw(Surf_Display, Surf_OverheadShip, 20, 120);
 
-            /*if(EnemyInterceptor::shipHit) {
-                if(EnemyInterceptor::interceptors.at(0)->hitTimer != 0) {
-                    Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "Hit Confirmed", textColor );
-                    CSurface::OnDraw(Surf_Display, Surf_TextHolder, 430, 600);
-                    SDL_FreeSurface(Surf_TextHolder);
-                    EnemyInterceptor::interceptors.at(0)->hitTimer--;
+            TacticsTile*** tacticsMatrix = tacticsGame->getTilesMatrix();
+            for(int i=0; i<TACTICS_BOARD_HEIGHT; i++)
+            {
+
+                for(int j=0; j<TACTICS_BOARD_WIDTH; j++)
+                {
+                    TacticsTile* tempT = tacticsMatrix[i][j];
+                    if(tempT->entity->entity == asteroid)
+                        CSurface::OnDraw(Surf_Display, Surf_Asteroids, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
+                    //Else the space is blank
                 }
-            }*/
+
+            }
+
             if(state_cardSelection)
                 CSurface::OnDraw(Surf_Display, Surf_CardSelectionPanel, 0, 0);
         }

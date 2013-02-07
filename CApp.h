@@ -12,6 +12,7 @@
 
 #include "EnemyInterceptor.h"
 #include "Dialog.h"
+#include "TacticsGame.h"
 
 
 
@@ -53,6 +54,8 @@ class CApp : public CEvent {
         SDL_Color       textColor;
 
         Dialog*         testDialog;
+
+        TacticsGame*     tacticsGame;
 
     public:
         bool            state_infoVisorUp;

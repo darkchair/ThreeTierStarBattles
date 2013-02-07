@@ -6,6 +6,12 @@ TacticsEntity::TacticsEntity() {
 
 }
 
+TacticsEntity::TacticsEntity(Entity en) {
+
+    entity = en;
+
+}
+
 TacticsEntity::~TacticsEntity() {
     //Do nothing
 }
