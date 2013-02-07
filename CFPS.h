@@ -3,6 +3,8 @@
 
 #include <SDL/SDL.h>
 
+#define FRAME_RATE 32
+
 class CFPS {
     public:
         static CFPS FPSControl;
@@ -11,7 +13,7 @@ class CFPS {
         int     OldTime;
         int     LastTime;
 
-        float     SpeedFactor;
+        float     SpeedFactor; //%speed the machine needs to run based on desired frame rate
 
         int    NumFrames;
         int     Frames;

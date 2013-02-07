@@ -21,7 +21,7 @@ void CFPS::OnLoop() {
         Frames = 0;
     }
 
-    SpeedFactor = ((SDL_GetTicks() - LastTime) / 1000.0f) * 32.0f;
+    SpeedFactor = ((SDL_GetTicks() - LastTime) / 1000.0f) * (float)FRAME_RATE;
 
     LastTime = SDL_GetTicks();
 

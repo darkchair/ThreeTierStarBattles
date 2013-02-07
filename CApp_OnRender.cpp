@@ -33,9 +33,12 @@ void CApp::OnRender() {
 
                 for(int j=0; j<TACTICS_BOARD_WIDTH; j++)
                 {
-                    TacticsTile* tempT = tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j];
-                    if(tempT->entity->entityType == asteroid)
+                    if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == asteroid)
                         CSurface::OnDraw(Surf_Display, Surf_Asteroids, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
+                    else if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == shipFriend)
+                        CSurface::OnDraw(Surf_Display, Surf_OverheadShip, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
+                    else if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == shipEnemy)
+                        CSurface::OnDraw(Surf_Display, Surf_OverheadShip2, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
                     //Else the space is blank
                 }
 

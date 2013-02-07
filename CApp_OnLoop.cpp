@@ -2,6 +2,6 @@
 
 void CApp::OnLoop() {
 
-
+    CFPS::FPSControl.OnLoop();
 
 }

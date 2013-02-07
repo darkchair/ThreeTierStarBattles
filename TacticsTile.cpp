@@ -1,20 +1,31 @@
 #include "TacticsTile.h"
 
 TacticsTile::TacticsTile() {
-//Gives a random tile, one quarter of the time an asteroid, the rest blank
 
-    //srand(time(NULL));
+    entity = new TacticsEntity(empty);
 
-    short rando = rand() % 7;//probably doesn't work, results don't make sense
-    Entity temp;
-    if(rando == 0)//About one Quarter of tiles are asteroids, the rest are empty
-        temp = (Entity)2;
-    else
-        temp = (Entity)0;
-    entity = new TacticsEntity(temp);
+}
+
+TacticsTile::TacticsTile(Entity en) {
+
+    entity = new TacticsEntity(en);
 
 }
 
 TacticsTile::~TacticsTile() {
     //Do nothing
+}
+
+
+void TacticsTile::randomAsteroid() {
+//Makes a tile an asteroid one seventh of the time
+
+    short rando = rand() % 7;//not sure if works
+    Entity temp;
+    if(rando == 0)
+        temp = asteroid;
+    else
+        temp = empty;
+    entity = new TacticsEntity(temp);
+
 }

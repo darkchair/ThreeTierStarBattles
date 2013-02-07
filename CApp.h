@@ -9,6 +9,7 @@
 #include "CEvent.h"
 #include "CSurface.h"
 #include "CAnimation.h"
+#include "CFPS.h"
 
 #include "EnemyInterceptor.h"
 #include "Dialog.h"
@@ -37,6 +38,7 @@ class CApp : public CEvent {
         SDL_Surface*    Surf_TacticsGrid;
         SDL_Surface*    Surf_Asteroids;
         SDL_Surface*    Surf_OverheadShip;
+        SDL_Surface*    Surf_OverheadShip2;
         SDL_Surface*    Surf_CardSelectionPanel;
         SDL_Surface*    Surf_HackingPanel;
         SDL_Surface*    Surf_SteamIcon;

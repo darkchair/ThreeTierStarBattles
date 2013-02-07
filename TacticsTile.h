@@ -3,7 +3,6 @@
 
 #include "TacticsEntity.h"
 
-#include <time.h>
 #include <stdlib.h>
 
 class TacticsTile {
@@ -15,7 +14,10 @@ class TacticsTile {
     public:
 
         TacticsTile();
+        TacticsTile(Entity en);
         ~TacticsTile();
+
+        void randomAsteroid();
 
 };
 

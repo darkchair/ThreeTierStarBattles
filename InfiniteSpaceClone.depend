@@ -2,13 +2,14 @@
 1348513926 source:c:\users\ian\documents\infinitespaceclone\capp_oncleanup.cpp
 	"CApp.h"
 
-1360199982 c:\users\ian\documents\infinitespaceclone\capp.h
+1360268260 c:\users\ian\documents\infinitespaceclone\capp.h
 	<SDL/SDL.h>
 	<SDL/SDL_ttf.h>
 	<time.h>
 	"CEvent.h"
 	"CSurface.h"
 	"CAnimation.h"
+	"CFPS.h"
 	"EnemyInterceptor.h"
 	"Dialog.h"
 	"TacticsGame.h"
@@ -23,19 +24,19 @@
 1360196279 source:c:\users\ian\documents\infinitespaceclone\capp_onevent.cpp
 	"CApp.h"
 
-1360199982 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
+1360268294 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
 	"CApp.h"
 
-1340131028 source:c:\users\ian\documents\infinitespaceclone\capp_onloop.cpp
+1360267457 source:c:\users\ian\documents\infinitespaceclone\capp_onloop.cpp
 	"CApp.h"
 
-1360215988 source:c:\users\ian\documents\infinitespaceclone\capp_onrender.cpp
+1360269521 source:c:\users\ian\documents\infinitespaceclone\capp_onrender.cpp
 	"CApp.h"
 
 1340130801 source:c:\users\ian\documents\infinitespaceclone\cevent.cpp
 	"CEvent.h"
 
-1360134112 source:c:\users\ian\documents\infinitespaceclone\capp.cpp
+1360268294 source:c:\users\ian\documents\infinitespaceclone\capp.cpp
 	"CApp.h"
 
 1345407789 source:c:\users\ian\documents\infinitespaceclone\csurface.cpp
@@ -253,10 +254,10 @@
 	"begin_code.h"
 	"close_code.h"
 
-1346607165 source:c:\users\ian\documents\infinitespaceclone\cfps.cpp
+1360260659 source:c:\users\ian\documents\infinitespaceclone\cfps.cpp
 	"CFPS.h"
 
-1346607165 c:\users\ian\documents\infinitespaceclone\cfps.h
+1360260659 c:\users\ian\documents\infinitespaceclone\cfps.h
 	<SDL/SDL.h>
 
 1348784147 c:\users\ian\documents\infinitespaceclone\dialog.h
@@ -284,20 +285,19 @@
 1360215996 source:c:\users\ian\documents\infinitespaceclone\tacticsentity.cpp
 	"TacticsEntity.h"
 
-1360215988 c:\users\ian\documents\infinitespaceclone\tacticsentity.h
+1360268682 c:\users\ian\documents\infinitespaceclone\tacticsentity.h
 
-1360215832 source:c:\users\ian\documents\infinitespaceclone\tacticsgame.cpp
+1360269241 source:c:\users\ian\documents\infinitespaceclone\tacticsgame.cpp
 	"TacticsGame.h"
 
 1360215906 c:\users\ian\documents\infinitespaceclone\tacticsgame.h
 	"TacticsTile.h"
 	<vector>
 
-1360197966 c:\users\ian\documents\infinitespaceclone\tacticstile.h
+1360269000 c:\users\ian\documents\infinitespaceclone\tacticstile.h
 	"TacticsEntity.h"
-	<time.h>
 	<stdlib.h>
 
-1360216479 source:c:\users\ian\documents\infinitespaceclone\tacticstile.cpp
+1360269353 source:c:\users\ian\documents\infinitespaceclone\tacticstile.cpp
 	"TacticsTile.h"
 

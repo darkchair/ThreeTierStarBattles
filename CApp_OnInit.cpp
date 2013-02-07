@@ -42,6 +42,9 @@ bool CApp::OnInit() {
     if((Surf_OverheadShip = CSurface::OnLoad("Images/overheadShip1.png")) == NULL) {
         return false;
     }
+    if((Surf_OverheadShip2 = CSurface::OnLoad("Images/overheadShip2.png")) == NULL) {
+        return false;
+    }
     if((Surf_CardSelectionPanel = CSurface::OnLoad("Images/cardSelectionVisor.png")) == NULL) {
         return false;
     }

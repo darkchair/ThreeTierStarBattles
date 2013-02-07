@@ -4,7 +4,8 @@
 
 enum Entity{
     empty,
-    ship,
+    shipFriend,
+    shipEnemy,
     asteroid
 };
 
