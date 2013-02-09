@@ -12,6 +12,30 @@ bool CApp::OnInit() {
         return false;
     }
 
+    if(!OnInitSurfaces()) {
+        return false;
+    }
+
+    Sommet16 = TTF_OpenFont("Sommet.ttf", 16);
+    Sommet18 = TTF_OpenFont("Sommet.ttf", 18);
+    Sommet24 = TTF_OpenFont("Sommet.ttf", 24);
+    Sommet30 = TTF_OpenFont("Sommet.ttf", 30);
+
+    testDialog = new Dialog();
+    testDialog->openDialog("introDialog.txt");
+
+    int random = rand() % 5 + 1;
+    for(int i=0; i<random; i++)
+        EnemyInterceptor::interceptors.push_back(new EnemyInterceptor());
+
+    tacticsGame = new TacticsGame::TacticsGame();
+
+
+    return true;
+}
+
+bool CApp::OnInitSurfaces() {
+
     if((Surf_Display = SDL_SetVideoMode(SCREEN_WIDTH, SCREEN_HEIGHT, 32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL) {
         return false;
     }
@@ -57,33 +81,13 @@ bool CApp::OnInit() {
     if((Surf_EnemyShip = CSurface::OnLoad("Images/enemyShip1Template.png")) == NULL) {
         return false;
     }
+    if((Surf_StrategicBoard = CSurface::OnLoad("Images/strategicBoard.png")) == NULL) {
+        return false;
+    }
     if((Surf_TextHolder = CSurface::OnLoad("Images/opponentsStats.png")) == NULL) {
         return false;
     }
-    if((Surf_HackingPanel = CSurface::OnLoad("Images/engineeringTemplate.png")) == NULL) {
-        return false;
-    }
-    if((Surf_SteamIcon = CSurface::OnLoad("Images/steamIcon.png")) == NULL) {
-        return false;
-    }
-    if((Surf_ElectricalIcon = CSurface::OnLoad("Images/electricalIcon.png")) == NULL) {
-        return false;
-    }
-
-    Sommet16 = TTF_OpenFont("Sommet.ttf", 16);
-    Sommet18 = TTF_OpenFont("Sommet.ttf", 18);
-    Sommet24 = TTF_OpenFont("Sommet.ttf", 24);
-    Sommet30 = TTF_OpenFont("Sommet.ttf", 30);
-
-    testDialog = new Dialog();
-    testDialog->openDialog("introDialog.txt");
-
-    int random = rand() % 5 + 1;
-    for(int i=0; i<random; i++)
-        EnemyInterceptor::interceptors.push_back(new EnemyInterceptor());
-
-    tacticsGame = new TacticsGame::TacticsGame();
-
 
     return true;
+
 }

@@ -17,7 +17,7 @@
 		<Cursor position="152" topLine="0" />
 	</File>
 	<File name="CApp_OnEvent.cpp" open="1" top="0" tabpos="8">
-		<Cursor position="1759" topLine="48" />
+		<Cursor position="1759" topLine="21" />
 	</File>
 	<File name="CApp_OnInit.cpp" open="1" top="0" tabpos="9">
 		<Cursor position="1390" topLine="27" />
@@ -25,8 +25,8 @@
 	<File name="CApp_OnLoop.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="76" topLine="0" />
 	</File>
-	<File name="CApp_OnRender.cpp" open="1" top="0" tabpos="7">
-		<Cursor position="2213" topLine="18" />
+	<File name="CApp_OnRender.cpp" open="1" top="1" tabpos="7">
+		<Cursor position="2213" topLine="21" />
 	</File>
 	<File name="CEvent.cpp" open="0" top="0" tabpos="9">
 		<Cursor position="67" topLine="0" />
@@ -73,8 +73,8 @@
 	<File name="TacticsEntity.h" open="1" top="0" tabpos="5">
 		<Cursor position="128" topLine="0" />
 	</File>
-	<File name="TacticsGame.cpp" open="1" top="1" tabpos="2">
-		<Cursor position="580" topLine="0" />
+	<File name="TacticsGame.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="1660" topLine="15" />
 	</File>
 	<File name="TacticsGame.h" open="1" top="0" tabpos="1">
 		<Cursor position="397" topLine="0" />

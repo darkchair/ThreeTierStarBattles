@@ -40,9 +40,7 @@ class CApp : public CEvent {
         SDL_Surface*    Surf_OverheadShip;
         SDL_Surface*    Surf_OverheadShip2;
         SDL_Surface*    Surf_CardSelectionPanel;
-        SDL_Surface*    Surf_HackingPanel;
-        SDL_Surface*    Surf_SteamIcon;
-        SDL_Surface*    Surf_ElectricalIcon;
+        SDL_Surface*    Surf_StrategicBoard;
         SDL_Surface*    Surf_DialogBackground;
         SDL_Surface*    Surf_DialogBox;
         SDL_Surface*    Surf_EnemyShip;
@@ -62,7 +60,7 @@ class CApp : public CEvent {
     public:
         bool            state_infoVisorUp;
         bool            state_tacticsBattle;
-        bool            state_engineeringBattle;
+        bool            state_strategicBattle;
         bool            state_dialog;
         bool            state_cardSelection;
 
@@ -74,6 +72,8 @@ class CApp : public CEvent {
 
     public:
         bool OnInit();
+
+            bool OnInitSurfaces();
 
         void OnEvent(SDL_Event* Event);
 

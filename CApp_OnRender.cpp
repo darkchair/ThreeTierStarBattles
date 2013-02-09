@@ -47,23 +47,8 @@ void CApp::OnRender() {
             if(state_cardSelection)
                 CSurface::OnDraw(Surf_Display, Surf_CardSelectionPanel, 0, 0);
         }
-        else if(state_engineeringBattle) {
-
-            textColor = {119, 158, 117};
-
-            CSurface::OnDraw(Surf_Display, Surf_HackingPanel, 0, 0);
-            Surf_TextHolder = TTF_RenderText_Blended( Sommet30, "Command", textColor );
-            CSurface::OnDraw(Surf_Display, Surf_TextHolder, 40, 40);
-            SDL_FreeSurface(Surf_TextHolder);
-            Surf_TextHolder = TTF_RenderText_Blended( Sommet30, "Help", textColor );
-            CSurface::OnDraw(Surf_Display, Surf_TextHolder, 40, 80);
-            SDL_FreeSurface(Surf_TextHolder);
-
-            textColor = {255, 255, 255};
-
-            //CSurface::OnDraw(Surf_Display, Surf_SteamIcon, 420, 420);
-            //CSurface::OnDraw(Surf_Display, Surf_ElectricalIcon, 550, 420);
-
+        else if(state_strategicBattle) {
+            CSurface::OnDraw(Surf_Display, Surf_StrategicBoard, 150, 50);
         }
         else {
             CSurface::OnDraw(Surf_Display, Surf_ShipPanel, 0, 0);

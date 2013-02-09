@@ -29,7 +29,7 @@ void CApp::OnLButtonDown(int mX, int mY) {
 
         if(mX >= 560+306 && mY >= 160 && mX <= 1000 && mY <= 492) {
             state_tacticsBattle = true;
-            state_engineeringBattle = false;
+            state_strategicBattle = false;
             state_dialog = false;
         }
         else if(mX >= 560 && mY >= 392 && mX <= 560+140 && mY <= 492) {
@@ -37,19 +37,19 @@ void CApp::OnLButtonDown(int mX, int mY) {
                 EnemyInterceptor::exitBattle();
                 state_tacticsBattle = false;
             //}
-            if(state_engineeringBattle)
-                state_engineeringBattle = false;
+            if(state_strategicBattle)
+                state_strategicBattle = false;
             else if(state_dialog)
                 state_dialog = false;
         }
         else if(mX >= 560+145 && mY >= 160 && mX <= 560+301 && mY <= 492) {
             state_dialog = false;
             state_tacticsBattle = false;
-            state_engineeringBattle = true;
+            state_strategicBattle = true;
         }
         else if(mX >= 560 && mY >= 160 && mX <= 560+140 && mY <= 390) {
             state_tacticsBattle = false;
-            state_engineeringBattle = false;
+            state_strategicBattle = false;
             state_dialog = true;
         }
 
@@ -75,7 +75,7 @@ void CApp::OnLButtonDown(int mX, int mY) {
         }*/
     }
 
-    else if(state_engineeringBattle) {
+    else if(state_strategicBattle) {
 
         if(mX >= 0 && mY >= 0 && mX <= 205 && mY <= 246) {
             //Show Commands

@@ -11,9 +11,7 @@ CApp::CApp() {
     Surf_OverheadShip = NULL;
     Surf_OverheadShip2 = NULL;
     Surf_CardSelectionPanel = NULL;
-    Surf_HackingPanel = NULL;
-    Surf_SteamIcon = NULL;
-    Surf_ElectricalIcon = NULL;
+    Surf_StrategicBoard = NULL;
     Surf_DialogBackground = NULL;
     Surf_DialogBox = NULL;
     Surf_EnemyShip = NULL;
@@ -30,7 +28,7 @@ CApp::CApp() {
 
     state_infoVisorUp = false;
     state_tacticsBattle = false;
-    state_engineeringBattle = false;
+    state_strategicBattle = false;
     state_dialog = false;
     state_cardSelection = false;
 

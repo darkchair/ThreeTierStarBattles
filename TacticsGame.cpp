@@ -26,8 +26,8 @@ TacticsGame::TacticsGame() {
             }
         }
         else {
-            if(tilesArray[(randLoc-7)*10 + 1]->entity->entityType == empty) {
-                tilesArray[(randLoc-7)*10 + 1] = new TacticsTile(shipFriend);
+            if(tilesArray[(randLoc-TACTICS_BOARD_HEIGHT)*10 + 1]->entity->entityType == empty) {
+                tilesArray[(randLoc-TACTICS_BOARD_HEIGHT)*10 + 1] = new TacticsTile(shipFriend);
                 friendlyCount--;
             }
         }
@@ -42,8 +42,8 @@ TacticsGame::TacticsGame() {
             }
         }
         else {
-            if(tilesArray[(randLoc-7)*10 + 8]->entity->entityType == empty) {
-                tilesArray[(randLoc-7)*10 + 8] = new TacticsTile(shipEnemy);
+            if(tilesArray[(randLoc-TACTICS_BOARD_HEIGHT)*10 + 8]->entity->entityType == empty) {
+                tilesArray[(randLoc-TACTICS_BOARD_HEIGHT)*10 + 8] = new TacticsTile(shipEnemy);
                 enemyCount--;
             }
         }
