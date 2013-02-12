@@ -305,11 +305,11 @@
 1360625789 c:\users\ian\documents\infinitespaceclone\skillgame.h
 	<SDL/SDL.h>
 
-1360627605 source:c:\users\ian\documents\infinitespaceclone\rhythmgame.cpp
+1360711429 source:c:\users\ian\documents\infinitespaceclone\rhythmgame.cpp
 	"RhythmGame.h"
 
-1360627402 c:\users\ian\documents\infinitespaceclone\rhythmgame.h
-	<string>
+1360711347 c:\users\ian\documents\infinitespaceclone\rhythmgame.h
+	<vector>
 	<stdio.h>
 
 1360626452 source:c:\users\ian\documents\infinitespaceclone\skillgame.cpp

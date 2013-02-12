@@ -1,14 +1,25 @@
 #ifndef RHYTHMGAME_H_INCLUDED
 #define RHYTHMGAME_H_INCLUDED
 
-#include <string>
+#include <vector>
 #include <stdio.h>
+
+enum directions {
+
+    up,
+    down,
+    left,
+    right
+
+};
 
 class RhythmGame {
 
     private:
 
-        static std::string currentRhythm;
+        static std::vector<directions> currentRhythm;
+
+        int bpm; //beats per minute
 
     public:
 

@@ -1,21 +1,28 @@
 #include "RhythmGame.h"
 
-std::string RhythmGame::currentRhythm;
+std::vector<directions> RhythmGame::currentRhythm;
 
 RhythmGame::RhythmGame() {
 
+    //Read rhythm from file
     FILE* rhythmFile = fopen("rhythm1.txt", "r");
 
-    std::string tempStr;
+    int tempInt;
+
+    if(!feof(rhythmFile))
+        fscanf(rhythmFile, "%d", &bpm);
+
     while(!feof(rhythmFile)) {
 
-        fscanf(rhythmFile, "%s", &tempStr);
-        RhythmGame::currentRhythm  += tempStr;
-        RhythmGame::currentRhythm += ":";
+        fscanf(rhythmFile, "%d", &tempInt);
+        RhythmGame::currentRhythm.push_back((directions)tempInt);
 
     }
 
     fclose(rhythmFile);
+
+    //Convert rhythm string to bytes
+
 
 }
 

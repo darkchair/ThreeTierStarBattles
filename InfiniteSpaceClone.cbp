@@ -63,8 +63,14 @@
 		<Unit filename="Engineering.h" />
 		<Unit filename="EngineeringState.cpp" />
 		<Unit filename="EngineeringState.h" />
+		<Unit filename="MelodyGame.cpp" />
+		<Unit filename="MelodyGame.h" />
+		<Unit filename="RhythmGame.cpp" />
+		<Unit filename="RhythmGame.h" />
 		<Unit filename="Ship.cpp" />
 		<Unit filename="Ship.h" />
+		<Unit filename="SkillGame.cpp" />
+		<Unit filename="SkillGame.h" />
 		<Unit filename="TacticsEntity.cpp" />
 		<Unit filename="TacticsEntity.h" />
 		<Unit filename="TacticsGame.cpp" />

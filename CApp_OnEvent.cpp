@@ -66,17 +66,6 @@ void CApp::OnLButtonDown(int mX, int mY) {
         else
             state_cardSelection = true;
 
-        /*for(int i=0; i<EnemyInterceptor::interceptors.size(); i++) {
-
-            if(mX >= EnemyInterceptor::interceptors.at(i)->position.x - 100 && mY >= EnemyInterceptor::interceptors.at(i)->position.x - 90 &&
-               mX <= EnemyInterceptor::interceptors.at(i)->position.x + 100 && mY <= EnemyInterceptor::interceptors.at(i)->position.x + 90) {
-                //Damage the ship   damageShip(i)
-                EnemyInterceptor::shipHit = true;
-                EnemyInterceptor::interceptors.at(i)->damage++;
-                if(EnemyInterceptor::interceptors.at(i)->hitTimer == 0)
-                    EnemyInterceptor::interceptors.at(i)->hitTimer = 100;
-            }
-        }*/
     }
 
     else if(state_strategicBattle) {
