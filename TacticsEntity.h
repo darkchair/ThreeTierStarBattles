@@ -1,7 +1,6 @@
 #ifndef TACTICSENTITY_H_INCLUDED
 #define TACTICSENTITY_H_INCLUDED
 
-
 enum Entity{
     empty,
     shipFriend,

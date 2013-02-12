@@ -52,7 +52,7 @@ TacticsGame::TacticsGame() {
 }
 
 TacticsGame::~TacticsGame() {
-    //Do nothing
+
 }
 
 TacticsTile** TacticsGame::getTilesArray() {

@@ -12,6 +12,10 @@ bool CApp::OnInit() {
         return false;
     }
 
+    if((Surf_Display = SDL_SetVideoMode(SCREEN_WIDTH, SCREEN_HEIGHT, 32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL) {
+        return false;
+    }
+
     if(!OnInitSurfaces()) {
         return false;
     }
@@ -35,10 +39,6 @@ bool CApp::OnInit() {
 }
 
 bool CApp::OnInitSurfaces() {
-
-    if((Surf_Display = SDL_SetVideoMode(SCREEN_WIDTH, SCREEN_HEIGHT, 32, SDL_HWSURFACE | SDL_DOUBLEBUF)) == NULL) {
-        return false;
-    }
 
     if((Surf_Background = CSurface::OnLoad("Images/background.png")) == NULL) {
         return false;

@@ -48,7 +48,14 @@ void CApp::OnRender() {
                 CSurface::OnDraw(Surf_Display, Surf_CardSelectionPanel, 0, 0);
         }
         else if(state_strategicBattle) {
+
             CSurface::OnDraw(Surf_Display, Surf_StrategicBoard, 150, 50);
+
+        }
+        else if(state_skillBattle) {
+
+
+
         }
         else {
             CSurface::OnDraw(Surf_Display, Surf_ShipPanel, 0, 0);
@@ -60,7 +67,7 @@ void CApp::OnRender() {
         if(ShipPanelAnimation.CurrentFrame < 500)
             ShipPanelAnimation.CurrentFrame += 4;
         else {
-            Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "Dialog", textColor );
+            Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "Skill", textColor );
             CSurface::OnDraw(Surf_Display, Surf_TextHolder, 1070 - ShipPanelAnimation.CurrentFrame, 360);
             SDL_FreeSurface(Surf_TextHolder);
             Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "Home", textColor );

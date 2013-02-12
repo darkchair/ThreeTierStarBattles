@@ -27,10 +27,11 @@ CApp::CApp() {
 
 
     state_infoVisorUp = false;
+    state_skillBattle = false;
     state_tacticsBattle = false;
+    state_cardSelection = false;
     state_strategicBattle = false;
     state_dialog = false;
-    state_cardSelection = false;
 
 
 

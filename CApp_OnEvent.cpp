@@ -10,6 +10,10 @@ void CApp::OnExit() {
 
 void CApp::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
+    if(state_skillBattle) {
+        SkillGame::OnKeyDown(sym, mod, unicode);
+    }
+
     if(sym == SDLK_SPACE) {
         if(state_infoVisorUp)
             state_infoVisorUp = false;
@@ -30,7 +34,7 @@ void CApp::OnLButtonDown(int mX, int mY) {
         if(mX >= 560+306 && mY >= 160 && mX <= 1000 && mY <= 492) {
             state_tacticsBattle = true;
             state_strategicBattle = false;
-            state_dialog = false;
+            state_skillBattle = false;
         }
         else if(mX >= 560 && mY >= 392 && mX <= 560+140 && mY <= 492) {
             //if(state_interceptorBattle) {
@@ -39,18 +43,18 @@ void CApp::OnLButtonDown(int mX, int mY) {
             //}
             if(state_strategicBattle)
                 state_strategicBattle = false;
-            else if(state_dialog)
-                state_dialog = false;
+            else if(state_skillBattle)
+                state_skillBattle = false;
         }
         else if(mX >= 560+145 && mY >= 160 && mX <= 560+301 && mY <= 492) {
-            state_dialog = false;
+            state_skillBattle = false;
             state_tacticsBattle = false;
             state_strategicBattle = true;
         }
         else if(mX >= 560 && mY >= 160 && mX <= 560+140 && mY <= 390) {
             state_tacticsBattle = false;
             state_strategicBattle = false;
-            state_dialog = true;
+            state_skillBattle = true;
         }
 
     }

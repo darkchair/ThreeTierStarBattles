@@ -13,7 +13,7 @@ TacticsTile::TacticsTile(Entity en) {
 }
 
 TacticsTile::~TacticsTile() {
-    //Do nothing
+
 }
 
 

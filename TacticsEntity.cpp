@@ -13,5 +13,5 @@ TacticsEntity::TacticsEntity(Entity en) {
 }
 
 TacticsEntity::~TacticsEntity() {
-    //Do nothing
+
 }

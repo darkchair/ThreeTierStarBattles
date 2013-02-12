@@ -14,6 +14,7 @@
 #include "EnemyInterceptor.h"
 #include "Dialog.h"
 #include "TacticsGame.h"
+#include "SkillGame.h"
 
 
 
@@ -59,10 +60,11 @@ class CApp : public CEvent {
 
     public:
         bool            state_infoVisorUp;
+        bool            state_skillBattle;
         bool            state_tacticsBattle;
+        bool            state_cardSelection;
         bool            state_strategicBattle;
         bool            state_dialog;
-        bool            state_cardSelection;
 
 
     public:
