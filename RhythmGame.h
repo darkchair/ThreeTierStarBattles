@@ -32,7 +32,7 @@ class RhythmGame {
         RhythmGame();
         ~RhythmGame();
 
-        static func OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
+        static void OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
 
 };
 
