@@ -43,8 +43,17 @@ RhythmGame::~RhythmGame() {
 
 }
 
-RhythmGame::func RhythmGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
+void RhythmGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
-    //Return a function pointer to the CApp of what to do
+    /*if(sym == SDLK_SPACE) {
+        if(state_infoVisorUp)
+            state_infoVisorUp = false;
+        else
+            state_infoVisorUp = true;
+    }
+    if(sym == SDLK_RETURN) {
+        if(state_dialog)
+            testDialog->currentLine++;
+    }*/
 
 }
