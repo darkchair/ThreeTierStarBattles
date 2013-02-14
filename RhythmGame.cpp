@@ -1,9 +1,11 @@
 #include "RhythmGame.h"
 
-std::vector<directions> RhythmGame::currentRhythmDirections;
-std::vector<directions> RhythmGame::currentRhythmTimings;
+bool RhythmGame::started;
 
 RhythmGame::RhythmGame() {
+
+    started = false;
+    nextNote = 0;
 
     //Read rhythm from file
     FILE* rhythmFile = fopen("rhythmDirections1.txt", "r");
@@ -43,17 +45,35 @@ RhythmGame::~RhythmGame() {
 
 }
 
+void RhythmGame::startGame() {
+
+    RhythmGame::started = true;
+    startTime = SDL_GetTicks();
+
+}
+
 void RhythmGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
-    /*if(sym == SDLK_SPACE) {
-        if(state_infoVisorUp)
-            state_infoVisorUp = false;
-        else
-            state_infoVisorUp = true;
+    int timeOfPress = SDL_GetTicks();
+
+    int tempDir;
+
+    if(sym == SDLK_UP)
+        tempDir = 0;
+    if(sym == SDLK_DOWN)
+        tempDir = 1;
+    if(sym == SDLK_LEFT)
+        tempDir = 2;
+    if(sym == SDLK_RIGHT)
+        tempDir = 3;
+
+    if
+    (
+       tempDir == currentRhythmDirections[nextNote]
+    && ((timeOfPress-startTime > currentRhythmTimings[nextNote] - 200) && (timeOfPress-startTime < currentRhythmTimings[nextNote] + 200))
+    )
+    {
+        hits++;
     }
-    if(sym == SDLK_RETURN) {
-        if(state_dialog)
-            testDialog->currentLine++;
-    }*/
 
 }

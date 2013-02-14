@@ -10,13 +10,11 @@ void CApp::OnExit() {
 
 void CApp::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
-    RhythmGame::func rhythmPointer;
-
-    if(state_rhythmBattle) {
-        rhythmPointer = RhythmGame::OnKeyDown(sym, mod, unicode);
+    if(state_rhythmBattle || RhythmGame::started) {
+        rhythmGame->OnKeyDown(sym, mod, unicode);
     }
     else if(state_melodyBattle) {
-        rhythmPointer = RhythmGame::OnKeyDown(sym, mod, unicode);
+        //RhythmGame::OnKeyDown(sym, mod, unicode);
     }
 
     if(sym == SDLK_SPACE) {
@@ -28,6 +26,10 @@ void CApp::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
     if(sym == SDLK_RETURN) {
         if(state_dialog)
             testDialog->currentLine++;
+        if(state_rhythmBattle) {
+            rhythmGame = new RhythmGame();
+            rhythmGame->startGame();
+        }
     }
 
 }

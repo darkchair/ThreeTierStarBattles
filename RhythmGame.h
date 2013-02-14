@@ -16,23 +16,31 @@ enum directions {
 
 class RhythmGame {
 
-    public:
-
-        typedef void (RhythmGame::*func)();
-
     private:
 
-        static std::vector<directions> currentRhythmDirections;
-        static std::vector<directions> currentRhythmTimings;
+        std::vector<directions> currentRhythmDirections;
+        std::vector<directions> currentRhythmTimings;
 
         int bpm; //beats per minute
+
+        int startTime;
+
+        int nextNote; //location in vector of next note that needs to be pressed
+
+        int hits; //notes hit
+
+    public:
+
+        static bool started;
 
     public:
 
         RhythmGame();
         ~RhythmGame();
 
-        static void OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
+        void startGame();
+
+        void OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
 
 };
 

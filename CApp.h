@@ -60,6 +60,8 @@ class CApp : public CEvent {
 
         TacticsGame*     tacticsGame;
 
+        RhythmGame*     rhythmGame;
+
     public:
         bool            state_infoVisorUp;
         bool            state_rhythmBattle;
