@@ -15,6 +15,8 @@
 #include "Dialog.h"
 #include "TacticsGame.h"
 #include "SkillGame.h"
+#include "RhythmGame.h"
+#include "MelodyGame.h"
 
 
 
@@ -60,7 +62,8 @@ class CApp : public CEvent {
 
     public:
         bool            state_infoVisorUp;
-        bool            state_skillBattle;
+        bool            state_rhythmBattle;
+        bool            state_melodyBattle;
         bool            state_tacticsBattle;
         bool            state_cardSelection;
         bool            state_strategicBattle;

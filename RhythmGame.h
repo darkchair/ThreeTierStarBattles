@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <stdio.h>
+#include <SDL/SDL.h>
 
 enum directions {
 
@@ -15,9 +16,14 @@ enum directions {
 
 class RhythmGame {
 
+    public:
+
+        typedef void (RhythmGame::*func)();
+
     private:
 
-        static std::vector<directions> currentRhythm;
+        static std::vector<directions> currentRhythmDirections;
+        static std::vector<directions> currentRhythmTimings;
 
         int bpm; //beats per minute
 
@@ -25,6 +31,8 @@ class RhythmGame {
 
         RhythmGame();
         ~RhythmGame();
+
+        static func OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
 
 };
 

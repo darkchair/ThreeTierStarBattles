@@ -52,7 +52,7 @@ void CApp::OnRender() {
             CSurface::OnDraw(Surf_Display, Surf_StrategicBoard, 150, 50);
 
         }
-        else if(state_skillBattle) {
+        else if(state_rhythmBattle || state_melodyBattle) {
 
 
 

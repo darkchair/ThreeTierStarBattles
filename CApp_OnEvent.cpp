@@ -10,8 +10,13 @@ void CApp::OnExit() {
 
 void CApp::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
-    if(state_skillBattle) {
-        SkillGame::OnKeyDown(sym, mod, unicode);
+    RhythmGame::func rhythmPointer;
+
+    if(state_rhythmBattle) {
+        rhythmPointer = RhythmGame::OnKeyDown(sym, mod, unicode);
+    }
+    else if(state_melodyBattle) {
+        rhythmPointer = RhythmGame::OnKeyDown(sym, mod, unicode);
     }
 
     if(sym == SDLK_SPACE) {
@@ -34,7 +39,8 @@ void CApp::OnLButtonDown(int mX, int mY) {
         if(mX >= 560+306 && mY >= 160 && mX <= 1000 && mY <= 492) {
             state_tacticsBattle = true;
             state_strategicBattle = false;
-            state_skillBattle = false;
+            state_rhythmBattle = false;
+            state_melodyBattle = false;
         }
         else if(mX >= 560 && mY >= 392 && mX <= 560+140 && mY <= 492) {
             //if(state_interceptorBattle) {
@@ -43,18 +49,24 @@ void CApp::OnLButtonDown(int mX, int mY) {
             //}
             if(state_strategicBattle)
                 state_strategicBattle = false;
-            else if(state_skillBattle)
-                state_skillBattle = false;
+            else if(state_rhythmBattle)
+                state_rhythmBattle = false;
+            else if(state_melodyBattle)
+                state_melodyBattle = false;
         }
         else if(mX >= 560+145 && mY >= 160 && mX <= 560+301 && mY <= 492) {
-            state_skillBattle = false;
+            state_rhythmBattle = false;
+            state_melodyBattle = false;
             state_tacticsBattle = false;
             state_strategicBattle = true;
         }
         else if(mX >= 560 && mY >= 160 && mX <= 560+140 && mY <= 390) {
             state_tacticsBattle = false;
             state_strategicBattle = false;
-            state_skillBattle = true;
+            //-------------------------
+            state_rhythmBattle = true;
+            state_melodyBattle = false;
+            //-------------------------
         }
 
     }

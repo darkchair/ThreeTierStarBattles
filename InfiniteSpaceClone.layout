@@ -17,16 +17,16 @@
 		<Cursor position="152" topLine="0" />
 	</File>
 	<File name="CApp_OnEvent.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="240" topLine="0" />
+		<Cursor position="1864" topLine="0" />
 	</File>
 	<File name="CApp_OnInit.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="355" topLine="1" />
+		<Cursor position="348" topLine="5" />
 	</File>
 	<File name="CApp_OnLoop.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="76" topLine="0" />
 	</File>
 	<File name="CApp_OnRender.cpp" open="1" top="0" tabpos="1">
-		<Cursor position="1049" topLine="21" />
+		<Cursor position="929" topLine="0" />
 	</File>
 	<File name="CEvent.cpp" open="0" top="0" tabpos="9">
 		<Cursor position="67" topLine="0" />
@@ -35,7 +35,7 @@
 		<Cursor position="247" topLine="0" />
 	</File>
 	<File name="CFPS.cpp" open="1" top="0" tabpos="10">
-		<Cursor position="284" topLine="0" />
+		<Cursor position="43" topLine="0" />
 	</File>
 	<File name="CFPS.h" open="0" top="0" tabpos="0">
 		<Cursor position="159" topLine="0" />
@@ -70,11 +70,11 @@
 	<File name="MelodyGame.h" open="0" top="0" tabpos="16">
 		<Cursor position="184" topLine="0" />
 	</File>
-	<File name="RhythmGame.cpp" open="1" top="0" tabpos="8">
-		<Cursor position="396" topLine="0" />
+	<File name="RhythmGame.cpp" open="1" top="1" tabpos="8">
+		<Cursor position="268" topLine="0" />
 	</File>
-	<File name="RhythmGame.h" open="1" top="1" tabpos="7">
-		<Cursor position="309" topLine="0" />
+	<File name="RhythmGame.h" open="1" top="0" tabpos="7">
+		<Cursor position="339" topLine="0" />
 	</File>
 	<File name="Ship.h" open="0" top="0" tabpos="12">
 		<Cursor position="112" topLine="0" />
