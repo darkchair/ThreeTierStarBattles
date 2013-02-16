@@ -61,7 +61,7 @@ TacticsTile** TacticsGame::getTilesArray() {
 
 }
 
-void OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode) {
+void TacticsGame::OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode) {
     
     
     
