@@ -32,7 +32,7 @@ bool CApp::OnInit() {
     for(int i=0; i<random; i++)
         EnemyInterceptor::interceptors.push_back(new EnemyInterceptor());
 
-    tacticsGame = new TacticsGame::TacticsGame();
+    //tacticsGame = new TacticsGame::TacticsGame();
 
 
     return true;
@@ -82,6 +82,12 @@ bool CApp::OnInitSurfaces() {
         return false;
     }
     if((Surf_StrategicBoard = CSurface::OnLoad("Images/strategicBoard.png")) == NULL) {
+        return false;
+    }
+    if((Surf_RhythmBackground = CSurface::OnLoad("Images/rhythmBackground.png")) == NULL) {
+        return false;
+    }
+    if((Surf_LeftArrow = CSurface::OnLoad("Images/leftArrow.png")) == NULL) {
         return false;
     }
     if((Surf_TextHolder = CSurface::OnLoad("Images/opponentsStats.png")) == NULL) {

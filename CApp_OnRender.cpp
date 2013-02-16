@@ -52,7 +52,17 @@ void CApp::OnRender() {
             CSurface::OnDraw(Surf_Display, Surf_StrategicBoard, 150, 50);
 
         }
-        else if(state_rhythmBattle || state_melodyBattle) {
+        else if(state_rhythmBattle) {
+
+            CSurface::OnDraw(Surf_Display, Surf_RhythmBackground, 200, 50);
+            if(!rhythmGame->isStarted()) {
+                Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "<Enter>", textColor );
+                CSurface::OnDraw(Surf_Display, Surf_TextHolder, 850, 600);
+                SDL_FreeSurface(Surf_TextHolder);
+            }
+
+        }
+        else if(state_melodyBattle) {
 
 
 

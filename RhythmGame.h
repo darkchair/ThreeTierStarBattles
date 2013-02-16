@@ -39,8 +39,11 @@ class RhythmGame {
         ~RhythmGame();
 
         void startGame();
+        bool isStarted();
 
         void OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode);
+
+        void OnLoop();
 
 };
 

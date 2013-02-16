@@ -52,6 +52,15 @@ void RhythmGame::startGame() {
 
 }
 
+bool RhythmGame::isStarted() {
+
+    if(started)
+        return true;
+
+    return false;
+
+}
+
 void RhythmGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
     int timeOfPress = SDL_GetTicks();
@@ -67,13 +76,23 @@ void RhythmGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
     if(sym == SDLK_RIGHT)
         tempDir = 3;
 
-    if
+    if(RhythmGame::currentRhythmDirections.size() == 0 || RhythmGame::currentRhythmTimings.size() == 0)
+        int i = 9;
+
+    else if
     (
-       tempDir == currentRhythmDirections[nextNote]
-    && ((timeOfPress-startTime > currentRhythmTimings[nextNote] - 200) && (timeOfPress-startTime < currentRhythmTimings[nextNote] + 200))
+       tempDir == currentRhythmDirections.at(nextNote)
+    && ((timeOfPress-startTime > currentRhythmTimings.at(nextNote) - 100) && (timeOfPress-startTime < currentRhythmTimings.at(nextNote) + 100))
     )
     {
         hits++;
     }
+
+}
+
+void RhythmGame::OnLoop() {
+
+    //if(SDL_GetTicks() > currentRhythmTimings[nextNote] + 100)
+    //    nextNote++;
 
 }

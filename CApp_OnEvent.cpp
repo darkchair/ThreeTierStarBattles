@@ -10,7 +10,7 @@ void CApp::OnExit() {
 
 void CApp::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
-    if(state_rhythmBattle || RhythmGame::started) {
+    if(state_rhythmBattle && RhythmGame::started) {
         rhythmGame->OnKeyDown(sym, mod, unicode);
     }
     else if(state_melodyBattle) {
@@ -26,7 +26,7 @@ void CApp::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
     if(sym == SDLK_RETURN) {
         if(state_dialog)
             testDialog->currentLine++;
-        if(state_rhythmBattle) {
+        if(state_rhythmBattle && !RhythmGame::started) {
             rhythmGame = new RhythmGame();
             rhythmGame->startGame();
         }

@@ -12,6 +12,8 @@ CApp::CApp() {
     Surf_OverheadShip2 = NULL;
     Surf_CardSelectionPanel = NULL;
     Surf_StrategicBoard = NULL;
+    Surf_RhythmBackground = NULL;
+    Surf_LeftArrow = NULL;
     Surf_DialogBackground = NULL;
     Surf_DialogBox = NULL;
     Surf_EnemyShip = NULL;

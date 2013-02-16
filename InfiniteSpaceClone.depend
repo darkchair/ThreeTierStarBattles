@@ -2,7 +2,7 @@
 1348513926 source:c:\users\ian\documents\infinitespaceclone\capp_oncleanup.cpp
 	"CApp.h"
 
-1360823557 c:\users\ian\documents\infinitespaceclone\capp.h
+1360962811 c:\users\ian\documents\infinitespaceclone\capp.h
 	<SDL/SDL.h>
 	<SDL/SDL_ttf.h>
 	<time.h>
@@ -24,22 +24,22 @@
 	<SDL/SDL.h>
 	<SDL/SDL_image.h>
 
-1360823730 source:c:\users\ian\documents\infinitespaceclone\capp_onevent.cpp
+1360962451 source:c:\users\ian\documents\infinitespaceclone\capp_onevent.cpp
 	"CApp.h"
 
-1360532672 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
+1360869087 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
 	"CApp.h"
 
-1360267457 source:c:\users\ian\documents\infinitespaceclone\capp_onloop.cpp
+1360867027 source:c:\users\ian\documents\infinitespaceclone\capp_onloop.cpp
 	"CApp.h"
 
-1360803314 source:c:\users\ian\documents\infinitespaceclone\capp_onrender.cpp
+1360870113 source:c:\users\ian\documents\infinitespaceclone\capp_onrender.cpp
 	"CApp.h"
 
 1340130801 source:c:\users\ian\documents\infinitespaceclone\cevent.cpp
 	"CEvent.h"
 
-1360803162 source:c:\users\ian\documents\infinitespaceclone\capp.cpp
+1360869087 source:c:\users\ian\documents\infinitespaceclone\capp.cpp
 	"CApp.h"
 
 1345407789 source:c:\users\ian\documents\infinitespaceclone\csurface.cpp
@@ -307,10 +307,10 @@
 1360625789 c:\users\ian\documents\infinitespaceclone\skillgame.h
 	<SDL/SDL.h>
 
-1360823454 source:c:\users\ian\documents\infinitespaceclone\rhythmgame.cpp
+1360958683 source:c:\users\ian\documents\infinitespaceclone\rhythmgame.cpp
 	"RhythmGame.h"
 
-1360824433 c:\users\ian\documents\infinitespaceclone\rhythmgame.h
+1360870042 c:\users\ian\documents\infinitespaceclone\rhythmgame.h
 	<vector>
 	<stdio.h>
 	<SDL/SDL.h>
