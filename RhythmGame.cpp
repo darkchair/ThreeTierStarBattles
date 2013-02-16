@@ -99,7 +99,7 @@ void RhythmGame::OnLoop() {
 
     //if 1000ms has passed, skip the -1 to the next section of notes
     secondChecker += SDL_GetTicks() - startTime - secondCheckerTimer;
-    if(secondChecker > currentRhythmTimings.at(nextNote)) {
+    if(currentRhythmTimings.at(nextNote) != -1 && currentRhythmTimings.at(nextNote) != -2 && secondChecker > currentRhythmTimings.at(nextNote)) {
 
         nextNote++;
 
