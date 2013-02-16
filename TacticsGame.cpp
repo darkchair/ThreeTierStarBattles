@@ -67,3 +67,10 @@ void TacticsGame::OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode) {
     
     
 }
+
+void TacticsGame::OnLButtonDown(int mX, int mY) {
+    
+    
+    
+    
+}
