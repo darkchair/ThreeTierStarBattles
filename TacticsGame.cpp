@@ -63,14 +63,14 @@ TacticsTile** TacticsGame::getTilesArray() {
 
 void TacticsGame::OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode) {
     
-    if(sym == SDLK_UP)
+   /* if(sym == SDLK_UP)
         tempDir = 0;
     if(sym == SDLK_DOWN)
         tempDir = 1;
     if(sym == SDLK_LEFT)
         tempDir = 2;
     if(sym == SDLK_RIGHT)
-        tempDir = 3;    
+        tempDir = 3;    */
     
 }
 
