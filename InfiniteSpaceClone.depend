@@ -2,7 +2,7 @@
 1348513926 source:c:\users\ian\documents\infinitespaceclone\capp_oncleanup.cpp
 	"CApp.h"
 
-1360962811 c:\users\ian\documents\infinitespaceclone\capp.h
+1360999109 c:\users\ian\documents\infinitespaceclone\capp.h
 	<SDL/SDL.h>
 	<SDL/SDL_ttf.h>
 	<time.h>
@@ -24,22 +24,22 @@
 	<SDL/SDL.h>
 	<SDL/SDL_image.h>
 
-1360962451 source:c:\users\ian\documents\infinitespaceclone\capp_onevent.cpp
+1360998098 source:c:\users\ian\documents\infinitespaceclone\capp_onevent.cpp
 	"CApp.h"
 
-1360997552 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
+1360999175 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
 	"CApp.h"
 
 1360867027 source:c:\users\ian\documents\infinitespaceclone\capp_onloop.cpp
 	"CApp.h"
 
-1360870113 source:c:\users\ian\documents\infinitespaceclone\capp_onrender.cpp
+1361000175 source:c:\users\ian\documents\infinitespaceclone\capp_onrender.cpp
 	"CApp.h"
 
 1340130801 source:c:\users\ian\documents\infinitespaceclone\cevent.cpp
 	"CEvent.h"
 
-1360996606 source:c:\users\ian\documents\infinitespaceclone\capp.cpp
+1360999175 source:c:\users\ian\documents\infinitespaceclone\capp.cpp
 	"CApp.h"
 
 1345407789 source:c:\users\ian\documents\infinitespaceclone\csurface.cpp
@@ -290,10 +290,10 @@
 
 1360625340 c:\users\ian\documents\infinitespaceclone\tacticsentity.h
 
-1360997651 source:c:\users\ian\documents\infinitespaceclone\tacticsgame.cpp
+1360998153 source:c:\users\ian\documents\infinitespaceclone\tacticsgame.cpp
 	"TacticsGame.h"
 
-1360997719 c:\users\ian\documents\infinitespaceclone\tacticsgame.h
+1360998153 c:\users\ian\documents\infinitespaceclone\tacticsgame.h
 	"TacticsTile.h"
 	<vector>
 	<SDL/SDL.h>
@@ -311,7 +311,7 @@
 1360958683 source:c:\users\ian\documents\infinitespaceclone\rhythmgame.cpp
 	"RhythmGame.h"
 
-1360870042 c:\users\ian\documents\infinitespaceclone\rhythmgame.h
+1361000159 c:\users\ian\documents\infinitespaceclone\rhythmgame.h
 	<vector>
 	<stdio.h>
 	<SDL/SDL.h>

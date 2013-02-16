@@ -16,7 +16,7 @@ enum directions {
 
 class RhythmGame {
 
-    private:
+    public:
 
         std::vector<directions> currentRhythmDirections;
         std::vector<directions> currentRhythmTimings;

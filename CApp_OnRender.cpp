@@ -44,7 +44,7 @@ void CApp::OnRender() {
 
             }
 
-            if(state_cardSelection)
+            if(tacticsGame->cardSelection)
                 CSurface::OnDraw(Surf_Display, Surf_CardSelectionPanel, 0, 0);
         }
         else if(state_strategicBattle) {
@@ -54,10 +54,22 @@ void CApp::OnRender() {
         }
         else if(state_rhythmBattle) {
 
+            char temp [50];
+
             CSurface::OnDraw(Surf_Display, Surf_RhythmBackground, 200, 50);
             if(!rhythmGame->isStarted()) {
                 Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "<Enter>", textColor );
                 CSurface::OnDraw(Surf_Display, Surf_TextHolder, 850, 600);
+                SDL_FreeSurface(Surf_TextHolder);
+            }
+            else {
+                CSurface::OnDraw(Surf_Display, Surf_LeftArrow, 225, 500);
+                CSurface::OnDraw(Surf_Display, Surf_UpArrow, 375, 500);
+                CSurface::OnDraw(Surf_Display, Surf_DownArrow, 525, 500);
+                CSurface::OnDraw(Surf_Display, Surf_RightArrow, 675, 500);
+
+                Surf_TextHolder = TTF_RenderText_Blended( Sommet18, itoa((int)SDL_GetTicks() - rhythmGame->startTime, temp, 10), textColor );
+                CSurface::OnDraw(Surf_Display, Surf_TextHolder, 850, 100);
                 SDL_FreeSurface(Surf_TextHolder);
             }
 

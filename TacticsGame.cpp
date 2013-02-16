@@ -1,8 +1,10 @@
 #include "TacticsGame.h"
 
 TacticsGame::TacticsGame() {
-    
+
     shipSelected = -1;
+
+    cardSelection = false;
 
     //Randomly fill the board with asteroids
     for(int i=0; i<TACTICS_BOARD_HEIGHT; i++)
@@ -64,7 +66,7 @@ TacticsTile** TacticsGame::getTilesArray() {
 }
 
 void TacticsGame::OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode) {
-    
+
    /* if(sym == SDLK_UP)
         tempDir = 0;
     if(sym == SDLK_DOWN)
@@ -73,11 +75,14 @@ void TacticsGame::OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode) {
         tempDir = 2;
     if(sym == SDLK_RIGHT)
         tempDir = 3;    */
-    
+
 }
 
 void TacticsGame::OnLButtonDown(int mX, int mY) {
-    
-    
-    
+
+    if(cardSelection)
+        cardSelection = false;
+    else
+        cardSelection = true;
+
 }

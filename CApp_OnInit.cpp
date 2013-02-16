@@ -87,7 +87,16 @@ bool CApp::OnInitSurfaces() {
     if((Surf_RhythmBackground = CSurface::OnLoad("Images/rhythmBackground.png")) == NULL) {
         return false;
     }
+    if((Surf_UpArrow = CSurface::OnLoad("Images/upArrow.png")) == NULL) {
+        return false;
+    }
+    if((Surf_DownArrow = CSurface::OnLoad("Images/downArrow.png")) == NULL) {
+        return false;
+    }
     if((Surf_LeftArrow = CSurface::OnLoad("Images/leftArrow.png")) == NULL) {
+        return false;
+    }
+    if((Surf_RightArrow = CSurface::OnLoad("Images/rightArrow.png")) == NULL) {
         return false;
     }
     if((Surf_TextHolder = CSurface::OnLoad("Images/opponentsStats.png")) == NULL) {

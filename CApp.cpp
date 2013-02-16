@@ -13,7 +13,10 @@ CApp::CApp() {
     Surf_CardSelectionPanel = NULL;
     Surf_StrategicBoard = NULL;
     Surf_RhythmBackground = NULL;
+    Surf_UpArrow = NULL;
+    Surf_DownArrow = NULL;
     Surf_LeftArrow = NULL;
+    Surf_RightArrow = NULL;
     Surf_DialogBackground = NULL;
     Surf_DialogBox = NULL;
     Surf_EnemyShip = NULL;
@@ -32,7 +35,6 @@ CApp::CApp() {
     state_rhythmBattle = false;
     state_melodyBattle = false;
     state_tacticsBattle = false;
-    state_cardSelection = false;
     state_strategicBattle = false;
     state_dialog = false;
 

@@ -75,10 +75,7 @@ void CApp::OnLButtonDown(int mX, int mY) {
 
     else if(state_tacticsBattle) {
 
-        if(state_cardSelection)
-            state_cardSelection = false;
-        else
-            state_cardSelection = true;
+        tacticsGame->OnLButtonDown(mX, mY);
 
     }
 

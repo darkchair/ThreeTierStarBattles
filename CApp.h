@@ -45,7 +45,10 @@ class CApp : public CEvent {
         SDL_Surface*    Surf_CardSelectionPanel;
         SDL_Surface*    Surf_StrategicBoard;
         SDL_Surface*    Surf_RhythmBackground;
+        SDL_Surface*    Surf_UpArrow;
+        SDL_Surface*    Surf_DownArrow;
         SDL_Surface*    Surf_LeftArrow;
+        SDL_Surface*    Surf_RightArrow;
         SDL_Surface*    Surf_DialogBackground;
         SDL_Surface*    Surf_DialogBox;
         SDL_Surface*    Surf_EnemyShip;
@@ -69,7 +72,6 @@ class CApp : public CEvent {
         bool            state_rhythmBattle;
         bool            state_melodyBattle;
         bool            state_tacticsBattle;
-        bool            state_cardSelection;
         bool            state_strategicBattle;
         bool            state_dialog;
 

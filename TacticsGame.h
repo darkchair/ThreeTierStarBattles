@@ -17,6 +17,8 @@ class TacticsGame {
 
         int shipSelected;
 
+        bool cardSelection;
+
     public:
 
         TacticsGame();
