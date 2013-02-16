@@ -13,10 +13,8 @@ CApp::CApp() {
     Surf_CardSelectionPanel = NULL;
     Surf_StrategicBoard = NULL;
     Surf_RhythmBackground = NULL;
-    Surf_UpArrow = NULL;
-    Surf_DownArrow = NULL;
-    Surf_LeftArrow = NULL;
-    Surf_RightArrow = NULL;
+    Surf_ArrowSheet = NULL;
+    Surf_ArrowNotesSheet = NULL;
     Surf_DialogBackground = NULL;
     Surf_DialogBox = NULL;
     Surf_EnemyShip = NULL;

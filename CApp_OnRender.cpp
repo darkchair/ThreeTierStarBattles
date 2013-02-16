@@ -56,6 +56,8 @@ void CApp::OnRender() {
 
             char temp [50];
 
+            int tempTime  = SDL_GetTicks();
+
             CSurface::OnDraw(Surf_Display, Surf_RhythmBackground, 200, 50);
             if(!rhythmGame->isStarted()) {
                 Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "<Enter>", textColor );
@@ -63,10 +65,32 @@ void CApp::OnRender() {
                 SDL_FreeSurface(Surf_TextHolder);
             }
             else {
-                CSurface::OnDraw(Surf_Display, Surf_LeftArrow, 225, 500);
-                CSurface::OnDraw(Surf_Display, Surf_UpArrow, 375, 500);
-                CSurface::OnDraw(Surf_Display, Surf_DownArrow, 525, 500);
-                CSurface::OnDraw(Surf_Display, Surf_RightArrow, 675, 500);
+                CSurface::OnDraw(Surf_Display, Surf_ArrowSheet, 225, 500, 200, 0, 100, 100);
+                CSurface::OnDraw(Surf_Display, Surf_ArrowSheet, 375, 500, 0, 0, 100, 100);
+                CSurface::OnDraw(Surf_Display, Surf_ArrowSheet, 525, 500, 100, 0, 100, 100);
+                CSurface::OnDraw(Surf_Display, Surf_ArrowSheet, 675, 500, 300, 0, 100, 100);
+
+                int currTime = SDL_GetTicks();
+                int timeCount = currTime;
+                for(int i = rhythmGame->nextNote; timeCount < currTime + 1000; i++) {
+
+                    int width; int height;
+                    int timing = rhythmGame->currentRhythmTimings[i];
+                    directions dir = rhythmGame->currentRhythmDirections[i];
+
+                    if(timing == -2)
+                        break;
+                    else if(timing == -1)
+                        timeCount += 0;//1000;
+                    else if(timeCount + timing < currTime + 1000) {
+
+                        width = 125*(int)dir;
+                        height = ((timing)*5 / 10);
+                        CSurface::OnDraw(Surf_Display, Surf_ArrowNotesSheet, 225 + width, height, 100*(int)dir, 0, 100, 100);
+
+                    }
+
+                }
 
                 Surf_TextHolder = TTF_RenderText_Blended( Sommet18, itoa((int)SDL_GetTicks() - rhythmGame->startTime, temp, 10), textColor );
                 CSurface::OnDraw(Surf_Display, Surf_TextHolder, 850, 100);

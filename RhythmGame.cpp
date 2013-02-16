@@ -6,16 +6,22 @@ RhythmGame::RhythmGame() {
 
     started = false;
     nextNote = 0;
+    secondChecker = 0;
+    secondCheckerTimer = 0;
+    currentRhythmTimings.assign(500, -2);
+    currentRhythmDirections.assign(500, (directions)4);
 
     //Read rhythm from file
     FILE* rhythmFile = fopen("rhythmDirections1.txt", "r");
 
     int tempInt;
+    int where = 0;
 
     while(!feof(rhythmFile)) {
 
         fscanf(rhythmFile, "%d", &tempInt);
-        RhythmGame::currentRhythmDirections.push_back((directions)tempInt);
+        currentRhythmDirections[where] = ((directions)tempInt);
+        where++;
 
     }
 
@@ -24,6 +30,7 @@ RhythmGame::RhythmGame() {
     rhythmFile = fopen("rhythmTimings1.txt", "r");
 
     //int tempInt;
+    where = 0;
 
     if(!feof(rhythmFile))
         fscanf(rhythmFile, "%d", &bpm);
@@ -31,7 +38,8 @@ RhythmGame::RhythmGame() {
     while(!feof(rhythmFile)) {
 
         fscanf(rhythmFile, "%d", &tempInt);
-        RhythmGame::currentRhythmTimings.push_back((directions)tempInt);
+        currentRhythmTimings[where] = (tempInt);
+        where++;
 
     }
 
@@ -76,10 +84,7 @@ void RhythmGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
     if(sym == SDLK_RIGHT)
         tempDir = 3;
 
-    if(RhythmGame::currentRhythmDirections.size() == 0 || RhythmGame::currentRhythmTimings.size() == 0)
-        int i = 9;
-
-    else if
+    if
     (
        tempDir == currentRhythmDirections.at(nextNote)
     && ((timeOfPress-startTime > currentRhythmTimings.at(nextNote) - 100) && (timeOfPress-startTime < currentRhythmTimings.at(nextNote) + 100))
@@ -92,7 +97,33 @@ void RhythmGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
 void RhythmGame::OnLoop() {
 
-    //if(SDL_GetTicks() > currentRhythmTimings[nextNote] + 100)
-    //    nextNote++;
+    //if 1000ms has passed, skip the -1 to the next section of notes
+    secondChecker += SDL_GetTicks() - startTime - secondCheckerTimer;
+    if(secondChecker > currentRhythmTimings.at(nextNote)) {
+
+        nextNote++;
+
+    }
+    if(secondChecker > 1000) {
+
+        if(currentRhythmTimings.at(nextNote) == -1) {
+            nextNote++;
+        }
+        if(currentRhythmTimings.at(nextNote) == -2) {
+            started = false;
+        }
+        else
+            int notGood;
+
+        secondChecker = 0;
+        secondCheckerTimer += 1000;
+
+    }
+
+}
+
+void RhythmGame::OnRender() {
+
+
 
 }
