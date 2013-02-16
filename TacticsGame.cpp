@@ -1,6 +1,9 @@
 #include "TacticsGame.h"
 
 TacticsGame::TacticsGame() {
+    
+    shipSelected = -1;
+    
 
     //Randomly fill the board with asteroids
     for(int i=0; i<TACTICS_BOARD_HEIGHT; i++)
