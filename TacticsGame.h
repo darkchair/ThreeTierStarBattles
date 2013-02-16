@@ -13,6 +13,8 @@ class TacticsGame {
     public:
 
         TacticsTile* tilesArray [TACTICS_BOARD_HEIGHT*TACTICS_BOARD_WIDTH];
+        
+        int shipSelected;
 
     public:
 
