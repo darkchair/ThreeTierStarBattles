@@ -81,5 +81,4 @@ void TacticsGame::OnLButtonDown(int mX, int mY) {
     
     
     
-    
 }
