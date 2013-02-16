@@ -13,6 +13,8 @@ class TacticsGame {
     public:
 
         TacticsTile* tilesArray [TACTICS_BOARD_HEIGHT*TACTICS_BOARD_WIDTH];
+        
+        int shipSelected;
 
     public:
 
@@ -20,6 +22,10 @@ class TacticsGame {
         ~TacticsGame();
 
         TacticsTile** getTilesArray();
+        
+        void OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode);
+        
+        void OnLButtonDown(int mX, int mY);
 
 };
 
