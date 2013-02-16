@@ -20,6 +20,8 @@ class TacticsGame {
         ~TacticsGame();
 
         TacticsTile** getTilesArray();
+        
+        void OnKeyPress();
 
 };
 
