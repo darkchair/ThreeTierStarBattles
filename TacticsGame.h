@@ -22,6 +22,8 @@ class TacticsGame {
         TacticsTile** getTilesArray();
         
         void OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode);
+        
+        void OnLButtonDown(int mX, int mY);
 
 };
 
