@@ -60,3 +60,10 @@ TacticsTile** TacticsGame::getTilesArray() {
     return tilesArray;
 
 }
+
+void OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode) {
+    
+    
+    
+    
+}
