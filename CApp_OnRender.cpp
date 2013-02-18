@@ -70,7 +70,7 @@ void CApp::OnRender() {
                 CSurface::OnDraw(Surf_Display, Surf_ArrowSheet, 525, 500, 100, 0, 100, 100);
                 CSurface::OnDraw(Surf_Display, Surf_ArrowSheet, 675, 500, 300, 0, 100, 100);
 
-                int currTime = SDL_GetTicks();
+                int currTime = SDL_GetTicks() - rhythmGame->startTime;
                 int timeCount = currTime;
                 for(int i = rhythmGame->nextNote; timeCount < currTime + 1000; i++) {
 
@@ -85,7 +85,7 @@ void CApp::OnRender() {
                     else if(timeCount + timing < currTime + 1000) {
 
                         width = 150*(int)dir;
-                        height = 500 - ((timing - currTime%1000)*5 / 10);
+                        height = 500 - ((timing - currTime%1000)/2);
                         CSurface::OnDraw(Surf_Display, Surf_ArrowNotesSheet, 225 + width, height, 100*(int)dir, 0, 100, 100);
 
                     }
