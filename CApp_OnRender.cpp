@@ -85,7 +85,7 @@ void CApp::OnRender() {
                     else if(timeCount + timing < currTime + 1000) {
 
                         width = 150*(int)dir;
-                        height = 500 - ((timing - currTime%1000)/2);
+                        height = 500 - ((timing - currTime%1000)*6)/7;
                         CSurface::OnDraw(Surf_Display, Surf_ArrowNotesSheet, 225 + width, height, 100*(int)dir, 0, 100, 100);
 
                     }

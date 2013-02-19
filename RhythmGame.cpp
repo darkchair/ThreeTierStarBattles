@@ -8,6 +8,7 @@ RhythmGame::RhythmGame() {
     nextNote = 0;
     secondChecker = 0;
     secondCheckerTimer = 0;
+    startTime = -1;
     currentRhythmTimings.assign(500, -2);
     currentRhythmDirections.assign(500, (directions)4);
 
@@ -56,7 +57,6 @@ RhythmGame::~RhythmGame() {
 void RhythmGame::startGame() {
 
     RhythmGame::started = true;
-    startTime = SDL_GetTicks();
 
 }
 
@@ -97,11 +97,24 @@ void RhythmGame::OnKeyDown(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
 void RhythmGame::OnLoop() {
 
-    //if 1000ms has passed, skip the -1 to the next section of notes
-    secondChecker += SDL_GetTicks() - startTime - secondCheckerTimer;
-    if(currentRhythmTimings.at(nextNote) != -1 && currentRhythmTimings.at(nextNote) != -2 && secondChecker > currentRhythmTimings.at(nextNote)) {
+    if(startTime == -1)
+        startTime = SDL_GetTicks();
 
+    //if 1000ms has passed, skip the -1 to the next section of notes
+    secondChecker = SDL_GetTicks() - startTime - secondCheckerTimer;
+
+    //Test
+    if(currentRhythmDirections.at(nextNote) == 1) {
+
+        int hey = 0;
+        hey++;
+
+    }
+
+    if(currentRhythmTimings.at(nextNote) != -1 && currentRhythmTimings.at(nextNote) != -2 && secondChecker > currentRhythmTimings.at(nextNote)) {
+    //Does not work correctly
         nextNote++;
+        return;
 
     }
     if(secondChecker > 1000) {
@@ -111,6 +124,10 @@ void RhythmGame::OnLoop() {
         }
         if(currentRhythmTimings.at(nextNote) == -2) {
             started = false;
+            nextNote = 0;
+            secondChecker = 0;
+            secondCheckerTimer = 0;
+            return;
         }
         else
             int notGood;
