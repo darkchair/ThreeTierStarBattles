@@ -30,6 +30,8 @@ class TacticsGame {
 
         void OnLButtonDown(int mX, int mY);
 
+        void OnRButtonDown(int mX, int mY);
+
 };
 
 #endif // TACTICSGAME_H_INCLUDED

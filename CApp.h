@@ -40,6 +40,7 @@ class CApp : public CEvent {
         SDL_Surface*    Surf_InfoVisor;
         SDL_Surface*    Surf_InterceptorPanel;
         SDL_Surface*    Surf_TacticsGrid;
+        SDL_Surface*    Surf_TacticsSelectionBorder;
         SDL_Surface*    Surf_Asteroids;
         SDL_Surface*    Surf_OverheadShip;
         SDL_Surface*    Surf_OverheadShip2;

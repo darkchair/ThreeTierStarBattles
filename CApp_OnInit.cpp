@@ -60,6 +60,9 @@ bool CApp::OnInitSurfaces() {
     if((Surf_TacticsGrid = CSurface::OnLoad("Images/tacticsGrid.png")) == NULL) {
         return false;
     }
+    if((Surf_TacticsSelectionBorder = CSurface::OnLoad("Images/tacticsSelectionBorder.png")) == NULL) {
+        return false;
+    }
     if((Surf_Asteroids = CSurface::OnLoad("Images/asteroids.png")) == NULL) {
         return false;
     }

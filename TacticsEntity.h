@@ -14,6 +14,8 @@ class TacticsEntity {
 
         Entity entityType;
 
+        int movementSpeed;
+
     public:
 
         TacticsEntity();
@@ -21,5 +23,13 @@ class TacticsEntity {
         ~TacticsEntity();
 
 };
+
+/*class FriendlyShipEntity : public TacticsEntity {
+
+    public:
+
+        int movementSpeed;
+
+};*/
 
 #endif // TACTICSENTITY_H_INCLUDED

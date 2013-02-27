@@ -7,6 +7,7 @@ CApp::CApp() {
     Surf_InfoVisor = NULL;
     Surf_InterceptorPanel = NULL;
     Surf_TacticsGrid = NULL;
+    Surf_TacticsSelectionBorder = NULL;
     Surf_Asteroids = NULL;
     Surf_OverheadShip = NULL;
     Surf_OverheadShip2 = NULL;

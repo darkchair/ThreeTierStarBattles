@@ -80,9 +80,40 @@ void TacticsGame::OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
 void TacticsGame::OnLButtonDown(int mX, int mY) {
 
-    if(cardSelection)
+    /*if(cardSelection)
         cardSelection = false;
     else
-        cardSelection = true;
+        cardSelection = true;*/
+
+    shipSelected = -1;
+
+    for(int i=0; i<TACTICS_BOARD_HEIGHT; i++) {
+
+        for(int j=0; j<TACTICS_BOARD_WIDTH; j++) {
+
+            if((mX >= j*TACTICS_BOARD_PIXELS_SIZE) &&
+               (mX <= j*TACTICS_BOARD_PIXELS_SIZE + TACTICS_BOARD_PIXELS_SIZE) &&
+               (mY >= i*TACTICS_BOARD_PIXELS_SIZE) &&
+               (mY <= i*TACTICS_BOARD_PIXELS_SIZE + TACTICS_BOARD_PIXELS_SIZE)) {
+
+                if(tilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == shipFriend) {
+                    shipSelected = i*TACTICS_BOARD_WIDTH + j;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+void TacticsGame::OnRButtonDown(int mX, int mY) {
+
+    if(shipSelected != -1) {
+
+
+
+    }
 
 }

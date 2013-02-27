@@ -46,6 +46,11 @@ void CApp::OnRender() {
 
             if(tacticsGame->cardSelection)
                 CSurface::OnDraw(Surf_Display, Surf_CardSelectionPanel, 0, 0);
+
+            if(tacticsGame->shipSelected != -1) {
+                CSurface::OnDraw(Surf_Display, Surf_TacticsSelectionBorder,
+                                  (tacticsGame->shipSelected%10)*TACTICS_BOARD_PIXELS_SIZE, (tacticsGame->shipSelected/10)*TACTICS_BOARD_PIXELS_SIZE);
+            }
         }
         else if(state_strategicBattle) {
 
@@ -85,7 +90,7 @@ void CApp::OnRender() {
                     else if(timeCount + timing < currTime + 1000) {
 
                         width = 150*(int)dir;
-                        height = 500 - ((timing - currTime%1000)*6)/7;
+                        height = 500 - ((timing - currTime%1000));
                         CSurface::OnDraw(Surf_Display, Surf_ArrowNotesSheet, 225 + width, height, 100*(int)dir, 0, 100, 100);
 
                     }

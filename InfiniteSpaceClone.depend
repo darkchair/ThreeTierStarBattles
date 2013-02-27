@@ -2,7 +2,7 @@
 1348513926 source:c:\users\ian\documents\infinitespaceclone\capp_oncleanup.cpp
 	"CApp.h"
 
-1361048147 c:\users\ian\documents\infinitespaceclone\capp.h
+1361992520 c:\users\ian\documents\infinitespaceclone\capp.h
 	<SDL/SDL.h>
 	<SDL/SDL_ttf.h>
 	<time.h>
@@ -27,19 +27,19 @@
 1360998098 source:c:\users\ian\documents\infinitespaceclone\capp_onevent.cpp
 	"CApp.h"
 
-1361042854 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
+1361992521 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
 	"CApp.h"
 
 1361215842 source:c:\users\ian\documents\infinitespaceclone\capp_onloop.cpp
 	"CApp.h"
 
-1361216134 source:c:\users\ian\documents\infinitespaceclone\capp_onrender.cpp
+1361992739 source:c:\users\ian\documents\infinitespaceclone\capp_onrender.cpp
 	"CApp.h"
 
 1340130801 source:c:\users\ian\documents\infinitespaceclone\cevent.cpp
 	"CEvent.h"
 
-1361042821 source:c:\users\ian\documents\infinitespaceclone\capp.cpp
+1361992520 source:c:\users\ian\documents\infinitespaceclone\capp.cpp
 	"CApp.h"
 
 1361042914 source:c:\users\ian\documents\infinitespaceclone\csurface.cpp
@@ -288,12 +288,12 @@
 1360532752 source:c:\users\ian\documents\infinitespaceclone\tacticsentity.cpp
 	"TacticsEntity.h"
 
-1360625340 c:\users\ian\documents\infinitespaceclone\tacticsentity.h
+1361994216 c:\users\ian\documents\infinitespaceclone\tacticsentity.h
 
-1360998153 source:c:\users\ian\documents\infinitespaceclone\tacticsgame.cpp
+1361991671 source:c:\users\ian\documents\infinitespaceclone\tacticsgame.cpp
 	"TacticsGame.h"
 
-1360998153 c:\users\ian\documents\infinitespaceclone\tacticsgame.h
+1361993071 c:\users\ian\documents\infinitespaceclone\tacticsgame.h
 	"TacticsTile.h"
 	<vector>
 	<SDL/SDL.h>
@@ -308,7 +308,7 @@
 1360625789 c:\users\ian\documents\infinitespaceclone\skillgame.h
 	<SDL/SDL.h>
 
-1361256405 source:c:\users\ian\documents\infinitespaceclone\rhythmgame.cpp
+1361402540 source:c:\users\ian\documents\infinitespaceclone\rhythmgame.cpp
 	"RhythmGame.h"
 
 1361053496 c:\users\ian\documents\infinitespaceclone\rhythmgame.h
