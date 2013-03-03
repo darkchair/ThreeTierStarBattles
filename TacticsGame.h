@@ -2,7 +2,6 @@
 #define TACTICSGAME_H_INCLUDED
 
 #include "TacticsTile.h"
-#include <vector>
 #include <SDL/SDL.h>
 
 #define TACTICS_BOARD_HEIGHT 7

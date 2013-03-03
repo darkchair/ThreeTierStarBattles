@@ -88,3 +88,13 @@ void CApp::OnLButtonDown(int mX, int mY) {
     }
 
 }
+
+void CApp::OnRButtonDown(int mX, int mY) {
+
+    if(state_tacticsBattle) {
+
+        tacticsGame->OnRButtonDown(mX, mY);
+
+    }
+
+}

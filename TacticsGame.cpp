@@ -112,7 +112,21 @@ void TacticsGame::OnRButtonDown(int mX, int mY) {
 
     if(shipSelected != -1) {
 
+        int locationSelected = 10*(mY/TACTICS_BOARD_PIXELS_SIZE) + mX/TACTICS_BOARD_PIXELS_SIZE; //index in array of space selected
+        if(tilesArray[shipSelected]->entity->movementSpeed >=
+               ( abs(shipSelected/7 - locationSelected/7) + abs(shipSelected%10 - locationSelected%10) )
+           ) {
 
+            if(tilesArray[locationSelected]->entity->entityType == empty) {
+
+                TacticsTile* hold = tilesArray[locationSelected];
+                tilesArray[locationSelected] = tilesArray[shipSelected];
+                tilesArray[shipSelected] =  hold;
+                shipSelected = -1;
+
+            }
+
+        }
 
     }
 

@@ -2,7 +2,7 @@
 1348513926 source:c:\users\ian\documents\infinitespaceclone\capp_oncleanup.cpp
 	"CApp.h"
 
-1361992520 c:\users\ian\documents\infinitespaceclone\capp.h
+1362262286 c:\users\ian\documents\infinitespaceclone\capp.h
 	<SDL/SDL.h>
 	<SDL/SDL_ttf.h>
 	<time.h>
@@ -24,7 +24,7 @@
 	<SDL/SDL.h>
 	<SDL/SDL_image.h>
 
-1360998098 source:c:\users\ian\documents\infinitespaceclone\capp_onevent.cpp
+1362262261 source:c:\users\ian\documents\infinitespaceclone\capp_onevent.cpp
 	"CApp.h"
 
 1361992521 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
@@ -285,20 +285,19 @@
 
 1352778350 c:\users\ian\documents\infinitespaceclone\engineeringstate.h
 
-1360532752 source:c:\users\ian\documents\infinitespaceclone\tacticsentity.cpp
+1361994203 source:c:\users\ian\documents\infinitespaceclone\tacticsentity.cpp
 	"TacticsEntity.h"
 
 1361994216 c:\users\ian\documents\infinitespaceclone\tacticsentity.h
 
-1361991671 source:c:\users\ian\documents\infinitespaceclone\tacticsgame.cpp
+1362262804 source:c:\users\ian\documents\infinitespaceclone\tacticsgame.cpp
 	"TacticsGame.h"
 
-1361993071 c:\users\ian\documents\infinitespaceclone\tacticsgame.h
+1362259523 c:\users\ian\documents\infinitespaceclone\tacticsgame.h
 	"TacticsTile.h"
-	<vector>
 	<SDL/SDL.h>
 
-1360625339 c:\users\ian\documents\infinitespaceclone\tacticstile.h
+1362259723 c:\users\ian\documents\infinitespaceclone\tacticstile.h
 	"TacticsEntity.h"
 	<stdlib.h>
 
