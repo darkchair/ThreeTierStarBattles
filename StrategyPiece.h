@@ -2,14 +2,13 @@
 #define STRATEGYPIECE_H_INCLUDED
 
 enum Piece {
-
-    pawn,
-    knight,
-    bishop,
-    rook,
-    queen,
-    king
-
+    PIECE_PAWN,
+    PIECE_KNIGHT,
+    PIECE_BISHOP,
+    PIECE_ROOK,
+    PIECE_QUEEN,
+    PIECE_KING,
+    PIECE_EMPTY
 };
 
 class StrategyPiece {

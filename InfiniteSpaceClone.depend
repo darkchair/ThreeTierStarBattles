@@ -2,7 +2,7 @@
 1348513926 source:c:\users\ian\documents\infinitespaceclone\capp_oncleanup.cpp
 	"CApp.h"
 
-1362363030 c:\users\ian\documents\infinitespaceclone\capp.h
+1362382020 c:\users\ian\documents\infinitespaceclone\capp.h
 	<SDL/SDL.h>
 	<SDL/SDL_ttf.h>
 	<time.h>
@@ -12,6 +12,7 @@
 	"CFPS.h"
 	"EnemyInterceptor.h"
 	"Dialog.h"
+	"StrategyGame.h"
 	"TacticsGame.h"
 	"SkillGame.h"
 	"RhythmGame.h"
@@ -27,13 +28,13 @@
 1362262261 source:c:\users\ian\documents\infinitespaceclone\capp_onevent.cpp
 	"CApp.h"
 
-1362361999 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
+1362382045 source:c:\users\ian\documents\infinitespaceclone\capp_oninit.cpp
 	"CApp.h"
 
 1361215842 source:c:\users\ian\documents\infinitespaceclone\capp_onloop.cpp
 	"CApp.h"
 
-1362363043 source:c:\users\ian\documents\infinitespaceclone\capp_onrender.cpp
+1362382790 source:c:\users\ian\documents\infinitespaceclone\capp_onrender.cpp
 	"CApp.h"
 
 1340130801 source:c:\users\ian\documents\infinitespaceclone\cevent.cpp
@@ -285,12 +286,12 @@
 
 1352778350 c:\users\ian\documents\infinitespaceclone\engineeringstate.h
 
-1361994203 source:c:\users\ian\documents\infinitespaceclone\tacticsentity.cpp
+1362382319 source:c:\users\ian\documents\infinitespaceclone\tacticsentity.cpp
 	"TacticsEntity.h"
 
-1361994216 c:\users\ian\documents\infinitespaceclone\tacticsentity.h
+1362382294 c:\users\ian\documents\infinitespaceclone\tacticsentity.h
 
-1362360088 source:c:\users\ian\documents\infinitespaceclone\tacticsgame.cpp
+1362382338 source:c:\users\ian\documents\infinitespaceclone\tacticsgame.cpp
 	"TacticsGame.h"
 
 1362362501 c:\users\ian\documents\infinitespaceclone\tacticsgame.h
@@ -301,7 +302,7 @@
 	"TacticsEntity.h"
 	<stdlib.h>
 
-1362360154 source:c:\users\ian\documents\infinitespaceclone\tacticstile.cpp
+1362382348 source:c:\users\ian\documents\infinitespaceclone\tacticstile.cpp
 	"TacticsTile.h"
 
 1360625789 c:\users\ian\documents\infinitespaceclone\skillgame.h
@@ -325,4 +326,15 @@
 1360627416 c:\users\ian\documents\infinitespaceclone\melodygame.h
 	<string>
 	<stdio.h>
+
+1362383335 source:c:\users\ian\documents\infinitespaceclone\strategygame.cpp
+	"StrategyGame.h"
+
+1362381179 c:\users\ian\documents\infinitespaceclone\strategygame.h
+	"StrategyPiece.h"
+
+1362381940 c:\users\ian\documents\infinitespaceclone\strategypiece.h
+
+1362362933 source:c:\users\ian\documents\infinitespaceclone\strategypiece.cpp
+	"StrategyPiece.h"
 

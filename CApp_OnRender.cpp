@@ -33,11 +33,11 @@ void CApp::OnRender() {
 
                 for(int j=0; j<TACTICS_BOARD_WIDTH; j++)
                 {
-                    if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == asteroid)
+                    if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == ENTITY_ASTEROID)
                         CSurface::OnDraw(Surf_Display, Surf_Asteroids, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
-                    else if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == shipFriend)
+                    else if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == ENTITY_SHIPFRIEND)
                         CSurface::OnDraw(Surf_Display, Surf_OverheadShip, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
-                    else if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == shipEnemy)
+                    else if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == ENTITY_SHIPFRIEND)
                         CSurface::OnDraw(Surf_Display, Surf_OverheadShip2, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
                     //Else the space is blank
                 }
@@ -90,15 +90,16 @@ void CApp::OnRender() {
                         timeCount += 1000;
                     else if(timeCount + timing < currTime + 1000) {
 
-                        width = 150*(int)dir;
+                        width = 150*static_cast<int>(dir);
                         height = 500 - ((timing - currTime%1000));
-                        CSurface::OnDraw(Surf_Display, Surf_ArrowNotesSheet, 225 + width, height, 100*(int)dir, 0, 100, 100);
+                        CSurface::OnDraw(Surf_Display, Surf_ArrowNotesSheet, 225 + width, height, 100*(int)dir, 0,
+                                         TACTICS_BOARD_PIXELS_SIZE, TACTICS_BOARD_PIXELS_SIZE);
 
                     }
 
                 }
 
-                Surf_TextHolder = TTF_RenderText_Blended( Sommet18, itoa((int)SDL_GetTicks() - rhythmGame->startTime, temp, 10), textColor );
+                Surf_TextHolder = TTF_RenderText_Blended( Sommet18, itoa(static_cast<int>(SDL_GetTicks()) - rhythmGame->startTime, temp, 10), textColor );
                 CSurface::OnDraw(Surf_Display, Surf_TextHolder, 850, 100);
                 SDL_FreeSurface(Surf_TextHolder);
             }
@@ -147,6 +148,17 @@ void CApp::OnRender() {
 
 void CApp::drawStrategicPieces() {
 
+    StrategyPiece** pieceArray = strategyGame->getPieceArray();
 
+    for(int i=0; i<STRATEGY_BOARD_WIDTH*STRATEGY_BOARD_HEIGHT; i++) {
+
+        if(pieceArray[i]->type != PIECE_EMPTY) {
+            CSurface::OnDraw(Surf_Display, Surf_ChessPiecesLettersSheet,
+                            i%STRATEGY_BOARD_WIDTH * STRATEGY_BOARD_PIXELS_SIZE + 150+48, i/STRATEGY_BOARD_HEIGHT * STRATEGY_BOARD_PIXELS_SIZE + 50,
+                            pieceArray[i]->type * STRATEGY_BOARD_PIXELS_SIZE, 0,
+                            STRATEGY_BOARD_PIXELS_SIZE, STRATEGY_BOARD_PIXELS_SIZE);
+        }
+
+    }
 
 }

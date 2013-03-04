@@ -13,6 +13,7 @@
 
 #include "EnemyInterceptor.h"
 #include "Dialog.h"
+#include "StrategyGame.h"
 #include "TacticsGame.h"
 #include "SkillGame.h"
 #include "RhythmGame.h"
@@ -63,8 +64,8 @@ class CApp : public CEvent {
 
         Dialog*         testDialog;
 
-        TacticsGame*     tacticsGame;
-
+        StrategyGame*   strategyGame;
+        TacticsGame*    tacticsGame;
         RhythmGame*     rhythmGame;
 
     public:

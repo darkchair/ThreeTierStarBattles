@@ -78,6 +78,10 @@
 		<Unit filename="Ship.h" />
 		<Unit filename="SkillGame.cpp" />
 		<Unit filename="SkillGame.h" />
+		<Unit filename="StrategyGame.cpp" />
+		<Unit filename="StrategyGame.h" />
+		<Unit filename="StrategyPiece.cpp" />
+		<Unit filename="StrategyPiece.h" />
 		<Unit filename="TacticsEntity.cpp" />
 		<Unit filename="TacticsEntity.h" />
 		<Unit filename="TacticsGame.cpp" />

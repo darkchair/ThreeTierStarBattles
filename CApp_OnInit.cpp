@@ -32,6 +32,7 @@ bool CApp::OnInit() {
     for(int i=0; i<random; i++)
         EnemyInterceptor::interceptors.push_back(new EnemyInterceptor());
 
+    strategyGame = new StrategyGame();
     tacticsGame = new TacticsGame();
 
 

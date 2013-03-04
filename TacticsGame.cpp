@@ -25,14 +25,14 @@ TacticsGame::TacticsGame() {
         //Randomly place ships in left-most two columns
         randLoc = rand() % TACTICS_BOARD_HEIGHT*2;
         if(randLoc < TACTICS_BOARD_HEIGHT) {
-            if(tilesArray[randLoc*10]->entity->entityType == empty) {
-                tilesArray[randLoc*10] = new TacticsTile(shipFriend);
+            if(tilesArray[randLoc*10]->entity->entityType == ENTITY_EMPTY) {
+                tilesArray[randLoc*10] = new TacticsTile(ENTITY_SHIPFRIEND);
                 friendlyCount--;
             }
         }
         else {
-            if(tilesArray[(randLoc-TACTICS_BOARD_HEIGHT)*10 + 1]->entity->entityType == empty) {
-                tilesArray[(randLoc-TACTICS_BOARD_HEIGHT)*10 + 1] = new TacticsTile(shipFriend);
+            if(tilesArray[(randLoc-TACTICS_BOARD_HEIGHT)*10 + 1]->entity->entityType == ENTITY_EMPTY) {
+                tilesArray[(randLoc-TACTICS_BOARD_HEIGHT)*10 + 1] = new TacticsTile(ENTITY_SHIPFRIEND);
                 friendlyCount--;
             }
         }
@@ -42,14 +42,14 @@ TacticsGame::TacticsGame() {
         //Randomly place ships in right-most two columns
         randLoc = rand() % TACTICS_BOARD_HEIGHT*2;
         if(randLoc < TACTICS_BOARD_HEIGHT) {
-            if(tilesArray[randLoc*10 + 9]->entity->entityType == empty) {
-                tilesArray[randLoc*10 + 9] = new TacticsTile(shipEnemy);
+            if(tilesArray[randLoc*10 + 9]->entity->entityType == ENTITY_EMPTY) {
+                tilesArray[randLoc*10 + 9] = new TacticsTile(ENTITY_SHIPENEMY);
                 enemyCount--;
             }
         }
         else {
-            if(tilesArray[(randLoc-TACTICS_BOARD_HEIGHT)*10 + 8]->entity->entityType == empty) {
-                tilesArray[(randLoc-TACTICS_BOARD_HEIGHT)*10 + 8] = new TacticsTile(shipEnemy);
+            if(tilesArray[(randLoc-TACTICS_BOARD_HEIGHT)*10 + 8]->entity->entityType == ENTITY_EMPTY) {
+                tilesArray[(randLoc-TACTICS_BOARD_HEIGHT)*10 + 8] = new TacticsTile(ENTITY_SHIPENEMY);
                 enemyCount--;
             }
         }
@@ -98,7 +98,7 @@ void TacticsGame::OnLButtonDown(int mX, int mY) {
                (mY >= i*TACTICS_BOARD_PIXELS_SIZE) &&
                (mY <= i*TACTICS_BOARD_PIXELS_SIZE + TACTICS_BOARD_PIXELS_SIZE)) {
 
-                if(tilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == shipFriend) {
+                if(tilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == ENTITY_SHIPFRIEND) {
                     shipSelected = i*TACTICS_BOARD_WIDTH + j;
                 }
 
@@ -120,7 +120,7 @@ void TacticsGame::OnRButtonDown(int mX, int mY) {
                  abs(shipSelected%TACTICS_BOARD_WIDTH - locationSelected%TACTICS_BOARD_WIDTH)  )
            ) {
 
-            if(tilesArray[locationSelected]->entity->entityType == empty) {
+            if(tilesArray[locationSelected]->entity->entityType == ENTITY_EMPTY) {
 
                 TacticsTile* hold = tilesArray[locationSelected];
                 tilesArray[locationSelected] = tilesArray[shipSelected];

@@ -2,10 +2,10 @@
 #define TACTICSENTITY_H_INCLUDED
 
 enum Entity{
-    empty,
-    shipFriend,
-    shipEnemy,
-    asteroid
+    ENTITY_SHIPFRIEND,
+    ENTITY_SHIPENEMY,
+    ENTITY_ASTEROID,
+    ENTITY_EMPTY
 };
 
 class TacticsEntity {

@@ -21,6 +21,8 @@ public:
     StrategyGame();
     ~StrategyGame();
 
+    StrategyPiece** getPieceArray();
+
 };
 
 #endif // STRATEGYGAME_H_INCLUDED

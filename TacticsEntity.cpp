@@ -2,7 +2,7 @@
 
 TacticsEntity::TacticsEntity() {
 
-    entityType = empty;
+    entityType = ENTITY_EMPTY;
     movementSpeed = -1;
 
 }
@@ -10,7 +10,7 @@ TacticsEntity::TacticsEntity() {
 TacticsEntity::TacticsEntity(Entity en) {
 
     entityType = en;
-    if(en == shipEnemy || en == shipFriend)
+    if(en == ENTITY_SHIPENEMY || en == ENTITY_SHIPFRIEND)
         movementSpeed = 3;
     else
         movementSpeed = -1;

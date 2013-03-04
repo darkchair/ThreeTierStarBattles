@@ -2,7 +2,7 @@
 
 TacticsTile::TacticsTile() {
 
-    entity = new TacticsEntity(empty);
+    entity = new TacticsEntity(ENTITY_EMPTY);
 
 }
 
@@ -23,9 +23,9 @@ void TacticsTile::randomAsteroid() {
     short rando = rand() % 7;//not sure if works
     Entity temp;
     if(rando == 0)
-        temp = asteroid;
+        temp = ENTITY_ASTEROID;
     else
-        temp = empty;
+        temp = ENTITY_EMPTY;
     delete entity;
     entity = new TacticsEntity(temp);
 
