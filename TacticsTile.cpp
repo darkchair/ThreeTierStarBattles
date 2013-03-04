@@ -26,6 +26,7 @@ void TacticsTile::randomAsteroid() {
         temp = asteroid;
     else
         temp = empty;
+    delete entity;
     entity = new TacticsEntity(temp);
 
 }

@@ -32,7 +32,6 @@ class CApp : public CEvent {
         SDL_Surface*    Surf_Display;
 
     private:
-
         SDL_Surface*    Surf_Background;
         SDL_Surface*    Surf_ShipPanel;
         CAnimation      ShipPanelAnimation;
@@ -46,6 +45,7 @@ class CApp : public CEvent {
         SDL_Surface*    Surf_OverheadShip2;
         SDL_Surface*    Surf_CardSelectionPanel;
         SDL_Surface*    Surf_StrategicBoard;
+        SDL_Surface*    Surf_ChessPiecesLettersSheet;
         SDL_Surface*    Surf_RhythmBackground;
         SDL_Surface*    Surf_ArrowSheet;
         SDL_Surface*    Surf_ArrowNotesSheet;
@@ -97,6 +97,8 @@ class CApp : public CEvent {
         void OnLoop();
 
         void OnRender();
+
+            void drawStrategicPieces();
 
         void OnCleanup();
 

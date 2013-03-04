@@ -10,26 +10,26 @@
 
 class TacticsGame {
 
-    public:
+public:
 
-        TacticsTile* tilesArray [TACTICS_BOARD_HEIGHT*TACTICS_BOARD_WIDTH];
+    TacticsTile* tilesArray [TACTICS_BOARD_HEIGHT*TACTICS_BOARD_WIDTH];
 
-        int shipSelected;
+    int shipSelected;
 
-        bool cardSelection;
+    bool cardSelection;
 
-    public:
+public:
 
-        TacticsGame();
-        ~TacticsGame();
+    TacticsGame();
+    ~TacticsGame();
 
-        TacticsTile** getTilesArray();
+    TacticsTile** getTilesArray();
 
-        void OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode);
+    void OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode);
 
-        void OnLButtonDown(int mX, int mY);
+    void OnLButtonDown(int mX, int mY);
 
-        void OnRButtonDown(int mX, int mY);
+    void OnRButtonDown(int mX, int mY);
 
 };
 

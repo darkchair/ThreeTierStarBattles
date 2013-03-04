@@ -22,6 +22,7 @@ TacticsGame::TacticsGame() {
     short randLoc;
 
     while(friendlyCount != 0){
+        //Randomly place ships in left-most two columns
         randLoc = rand() % TACTICS_BOARD_HEIGHT*2;
         if(randLoc < TACTICS_BOARD_HEIGHT) {
             if(tilesArray[randLoc*10]->entity->entityType == empty) {
@@ -38,6 +39,7 @@ TacticsGame::TacticsGame() {
     }
 
     while(enemyCount != 0) {
+        //Randomly place ships in right-most two columns
         randLoc = rand() % TACTICS_BOARD_HEIGHT*2;
         if(randLoc < TACTICS_BOARD_HEIGHT) {
             if(tilesArray[randLoc*10 + 9]->entity->entityType == empty) {
@@ -115,7 +117,7 @@ void TacticsGame::OnRButtonDown(int mX, int mY) {
         int locationSelected = TACTICS_BOARD_WIDTH*(mY/TACTICS_BOARD_PIXELS_SIZE) + mX/TACTICS_BOARD_PIXELS_SIZE; //index in array of space selected
         if(tilesArray[shipSelected]->entity->movementSpeed >=
                ( abs(shipSelected/TACTICS_BOARD_WIDTH - locationSelected/TACTICS_BOARD_WIDTH) +
-                 abs(shipSelected%TACTICS_BOARD_WIDTH - locationSelected%TACTICS_BOARD_WIDTH) )
+                 abs(shipSelected%TACTICS_BOARD_WIDTH - locationSelected%TACTICS_BOARD_WIDTH)  )
            ) {
 
             if(tilesArray[locationSelected]->entity->entityType == empty) {

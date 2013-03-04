@@ -55,6 +55,7 @@ void CApp::OnRender() {
         else if(state_strategicBattle) {
 
             CSurface::OnDraw(Surf_Display, Surf_StrategicBoard, 150, 50);
+            drawStrategicPieces();
 
         }
         else if(state_rhythmBattle) {
@@ -140,4 +141,12 @@ void CApp::OnRender() {
     }
 
     SDL_Flip(Surf_Display);
+}
+
+
+
+void CApp::drawStrategicPieces() {
+
+
+
 }
