@@ -6,6 +6,8 @@
 #define STRATEGY_BOARD_HEIGHT 8
 #define STRATEGY_BOARD_WIDTH 8
 #define STRATEGY_BOARD_PIXELS_SIZE 75
+#define STRATEGY_BOARD_X_OFFSET 200
+#define STRATEGY_BOARD_Y_OFFSET 50
 
 class StrategyGame {
 
@@ -22,6 +24,8 @@ public:
     ~StrategyGame();
 
     StrategyPiece** getPieceArray();
+
+    void OnLButtonDown(int mX, int mY);
 
 };
 

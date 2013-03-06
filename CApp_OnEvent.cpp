@@ -85,6 +85,8 @@ void CApp::OnLButtonDown(int mX, int mY) {
             //Show Commands
         }
 
+        strategyGame->OnLButtonDown(mX, mY);
+
     }
 
 }

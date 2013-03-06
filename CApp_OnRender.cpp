@@ -24,38 +24,27 @@ void CApp::OnRender() {
 
         if(state_tacticsBattle) {
             CSurface::OnDraw(Surf_Display, Surf_TacticsGrid, 0, 0);
-            //CSurface::OnDraw(Surf_Display, Surf_Asteroids, 300, 200);
-            //CSurface::OnDraw(Surf_Display, Surf_OverheadShip, 20, 120);
 
-            TacticsTile** tacticsTilesArray = tacticsGame->getTilesArray();
-            for(int i=0; i<TACTICS_BOARD_HEIGHT; i++)
-            {
-
-                for(int j=0; j<TACTICS_BOARD_WIDTH; j++)
-                {
-                    if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == ENTITY_ASTEROID)
-                        CSurface::OnDraw(Surf_Display, Surf_Asteroids, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
-                    else if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == ENTITY_SHIPFRIEND)
-                        CSurface::OnDraw(Surf_Display, Surf_OverheadShip, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
-                    else if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == ENTITY_SHIPENEMY)
-                        CSurface::OnDraw(Surf_Display, Surf_OverheadShip2, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
-                    //Else the space is blank
-                }
-
-            }
+            drawTacticsEntities();
 
             if(tacticsGame->cardSelection)
                 CSurface::OnDraw(Surf_Display, Surf_CardSelectionPanel, 0, 0);
 
             if(tacticsGame->shipSelected != -1) {
                 CSurface::OnDraw(Surf_Display, Surf_TacticsSelectionBorder,
-                                  (tacticsGame->shipSelected%10)*TACTICS_BOARD_PIXELS_SIZE, (tacticsGame->shipSelected/10)*TACTICS_BOARD_PIXELS_SIZE);
+                                (tacticsGame->shipSelected%TACTICS_BOARD_WIDTH)*TACTICS_BOARD_PIXELS_SIZE,
+                                (tacticsGame->shipSelected/TACTICS_BOARD_WIDTH)*TACTICS_BOARD_PIXELS_SIZE);
             }
         }
         else if(state_strategicBattle) {
 
-            CSurface::OnDraw(Surf_Display, Surf_StrategicBoard, 150, 50);
+            CSurface::OnDraw(Surf_Display, Surf_StrategicBoard, 0, 0);
             drawStrategicPieces();
+            if(strategyGame->pieceSelected != -1) {
+                CSurface::OnDraw(Surf_Display, Surf_StrategicSelectionBorder,
+                                (strategyGame->pieceSelected%STRATEGY_BOARD_WIDTH)*STRATEGY_BOARD_PIXELS_SIZE + STRATEGY_BOARD_X_OFFSET,
+                                (strategyGame->pieceSelected/STRATEGY_BOARD_WIDTH)*STRATEGY_BOARD_PIXELS_SIZE + STRATEGY_BOARD_Y_OFFSET);
+            }
 
         }
         else if(state_rhythmBattle) {
@@ -146,6 +135,27 @@ void CApp::OnRender() {
 
 
 
+void CApp::drawTacticsEntities() {
+
+    TacticsTile** tacticsTilesArray = tacticsGame->getTilesArray();
+    for(int i=0; i<TACTICS_BOARD_HEIGHT; i++)
+    {
+
+        for(int j=0; j<TACTICS_BOARD_WIDTH; j++)
+        {
+            if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == ENTITY_ASTEROID)
+                CSurface::OnDraw(Surf_Display, Surf_Asteroids, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
+            else if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == ENTITY_SHIPFRIEND)
+                CSurface::OnDraw(Surf_Display, Surf_OverheadShip, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
+            else if(tacticsTilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == ENTITY_SHIPENEMY)
+                CSurface::OnDraw(Surf_Display, Surf_OverheadShip2, j*TACTICS_BOARD_PIXELS_SIZE, i*TACTICS_BOARD_PIXELS_SIZE);
+            //Else the space is blank
+        }
+
+    }
+
+}
+
 void CApp::drawStrategicPieces() {
 
     StrategyPiece** pieceArray = strategyGame->getPieceArray();
@@ -154,8 +164,10 @@ void CApp::drawStrategicPieces() {
 
         if(pieceArray[i]->type != PIECE_EMPTY) {
             CSurface::OnDraw(Surf_Display, Surf_ChessPiecesLettersSheet,
-                            i%STRATEGY_BOARD_WIDTH * STRATEGY_BOARD_PIXELS_SIZE + 150+48, i/STRATEGY_BOARD_HEIGHT * STRATEGY_BOARD_PIXELS_SIZE + 50,
-                            pieceArray[i]->type * STRATEGY_BOARD_PIXELS_SIZE, 0,
+                            i%STRATEGY_BOARD_WIDTH * STRATEGY_BOARD_PIXELS_SIZE + STRATEGY_BOARD_X_OFFSET,
+                            i/STRATEGY_BOARD_HEIGHT * STRATEGY_BOARD_PIXELS_SIZE + STRATEGY_BOARD_Y_OFFSET,
+                            pieceArray[i]->type * STRATEGY_BOARD_PIXELS_SIZE,
+                            0,
                             STRATEGY_BOARD_PIXELS_SIZE, STRATEGY_BOARD_PIXELS_SIZE);
         }
 

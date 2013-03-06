@@ -46,6 +46,7 @@ class CApp : public CEvent {
         SDL_Surface*    Surf_OverheadShip2;
         SDL_Surface*    Surf_CardSelectionPanel;
         SDL_Surface*    Surf_StrategicBoard;
+        SDL_Surface*    Surf_StrategicSelectionBorder;
         SDL_Surface*    Surf_ChessPiecesLettersSheet;
         SDL_Surface*    Surf_RhythmBackground;
         SDL_Surface*    Surf_ArrowSheet;
@@ -99,6 +100,7 @@ class CApp : public CEvent {
 
         void OnRender();
 
+            void drawTacticsEntities();
             void drawStrategicPieces();
 
         void OnCleanup();

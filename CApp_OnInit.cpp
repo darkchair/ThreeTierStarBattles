@@ -88,6 +88,9 @@ bool CApp::OnInitSurfaces() {
     if((Surf_StrategicBoard = CSurface::OnLoad("Images/strategicBoard.png")) == NULL) {
         return false;
     }
+    if((Surf_StrategicSelectionBorder = CSurface::OnLoad("Images/strategicSelectionBorder.png")) == NULL) {
+        return false;
+    }
     if((Surf_ChessPiecesLettersSheet = CSurface::OnLoad("Images/chessPiecesLetters.png")) == NULL) {
         return false;
     }

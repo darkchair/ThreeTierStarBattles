@@ -2,6 +2,8 @@
 
 StrategyGame::StrategyGame() {
 
+    pieceSelected = -1;
+
     for(int i=0; i<STRATEGY_BOARD_WIDTH; i++) {
         pieceArray[8*1+i] = new StrategyPiece(PIECE_PAWN);
         pieceArray[8*2+i] = new StrategyPiece(PIECE_EMPTY);
@@ -40,5 +42,30 @@ StrategyGame::~StrategyGame() {
 StrategyPiece** StrategyGame::getPieceArray() {
 
     return pieceArray;
+
+}
+
+void StrategyGame::OnLButtonDown(int mX, int mY) {
+
+    pieceSelected = -1;
+
+    for(int i=0; i<STRATEGY_BOARD_HEIGHT; i++) {
+
+        for(int j=0; j<STRATEGY_BOARD_WIDTH; j++) {
+
+            if((mX >= j*STRATEGY_BOARD_PIXELS_SIZE + STRATEGY_BOARD_X_OFFSET) &&
+               (mX <= j*STRATEGY_BOARD_PIXELS_SIZE + STRATEGY_BOARD_PIXELS_SIZE + STRATEGY_BOARD_X_OFFSET) &&
+               (mY >= i*STRATEGY_BOARD_PIXELS_SIZE + STRATEGY_BOARD_Y_OFFSET) &&
+               (mY <= i*STRATEGY_BOARD_PIXELS_SIZE + STRATEGY_BOARD_PIXELS_SIZE + STRATEGY_BOARD_Y_OFFSET)) {
+
+                if(pieceArray[i*STRATEGY_BOARD_WIDTH + j]->type != PIECE_EMPTY) {
+                    pieceSelected = i*STRATEGY_BOARD_WIDTH + j;
+                }
+
+            }
+
+        }
+
+    }
 
 }

@@ -82,11 +82,6 @@ void TacticsGame::OnKeyPress(SDLKey sym, SDLMod mod, Uint16 unicode) {
 
 void TacticsGame::OnLButtonDown(int mX, int mY) {
 
-    /*if(cardSelection)
-        cardSelection = false;
-    else
-        cardSelection = true;*/
-
     shipSelected = -1;
 
     for(int i=0; i<TACTICS_BOARD_HEIGHT; i++) {
@@ -100,6 +95,7 @@ void TacticsGame::OnLButtonDown(int mX, int mY) {
 
                 if(tilesArray[i*TACTICS_BOARD_WIDTH + j]->entity->entityType == ENTITY_SHIPFRIEND) {
                     shipSelected = i*TACTICS_BOARD_WIDTH + j;
+                    return;
                 }
 
             }
