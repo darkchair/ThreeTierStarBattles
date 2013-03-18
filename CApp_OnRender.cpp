@@ -17,7 +17,7 @@ void CApp::OnRender() {
 
         Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "<Enter>", textColor );
         CSurface::OnDraw(Surf_Display, Surf_TextHolder, 900, 670);
-        SDL_FreeSurface(Surf_TextHolder);*/
+        SDL_FreeSurface(Surf_TextHolder); */
     }
     else {
         CSurface::OnDraw(Surf_Display, Surf_Background, 0, 0);
@@ -34,6 +34,15 @@ void CApp::OnRender() {
                 CSurface::OnDraw(Surf_Display, Surf_TacticsSelectionBorder,
                                 (tacticsGame->shipSelected%TACTICS_BOARD_WIDTH)*TACTICS_BOARD_PIXELS_SIZE,
                                 (tacticsGame->shipSelected/TACTICS_BOARD_WIDTH)*TACTICS_BOARD_PIXELS_SIZE);
+
+                Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "<R-Click>", textColor );
+                CSurface::OnDraw(Surf_Display, Surf_TextHolder, 900, 600);
+                SDL_FreeSurface(Surf_TextHolder);
+            }
+            else {
+                Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "<L-Click>", textColor );
+                CSurface::OnDraw(Surf_Display, Surf_TextHolder, 900, 600);
+                SDL_FreeSurface(Surf_TextHolder);
             }
         }
         else if(state_strategicBattle) {
@@ -60,6 +69,7 @@ void CApp::OnRender() {
                 SDL_FreeSurface(Surf_TextHolder);
             }
             else {
+                //Draw the background arrows onto the board
                 CSurface::OnDraw(Surf_Display, Surf_ArrowSheet, 225, 500, 200, 0, 100, 100);
                 CSurface::OnDraw(Surf_Display, Surf_ArrowSheet, 375, 500, 0, 0, 100, 100);
                 CSurface::OnDraw(Surf_Display, Surf_ArrowSheet, 525, 500, 100, 0, 100, 100);
@@ -68,6 +78,14 @@ void CApp::OnRender() {
                 int currTime = SDL_GetTicks() - rhythmGame->startTime;
                 int timeCount = currTime;
                 for(int i = rhythmGame->nextNote; timeCount < currTime + 1000; i++) {
+                    /* The rhythm game 'songs' are made from two files, a Timings file
+                    and a Directions file. The timings file is a series of integers listing
+                    at what millisecond the note is to be played. A -1 indicates the end
+                    of a second of time, breaking up the timings into seconds. A -2 indicates
+                    the end of the song. So a file reading '200 400 650 -1 200 400 700 -2'
+                    would have a note at 200ms, 400ms, 650ms, 1200ms, 1400ms, and 1700ms.
+                    The Directions file matches one to one with each note timing in
+                    the Timings file.*/
 
                     int width; int height;
                     int timing = rhythmGame->currentRhythmTimings[i];
@@ -102,12 +120,17 @@ void CApp::OnRender() {
         else {
             CSurface::OnDraw(Surf_Display, Surf_ShipPanel, 0, 0);
             CSurface::OnDraw(Surf_Display, Surf_Ship, 75, 140);
+            if(!state_infoVisorUp) {
+                Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "<Space>", textColor );
+                CSurface::OnDraw(Surf_Display, Surf_TextHolder, 850, 600);
+                SDL_FreeSurface(Surf_TextHolder);
+            }
         }
     }
     if(state_infoVisorUp) {
         CSurface::OnDraw(Surf_Display, Surf_InfoVisor, 1000 - ShipPanelAnimation.CurrentFrame, 0);
         if(ShipPanelAnimation.CurrentFrame < 500)
-            ShipPanelAnimation.CurrentFrame += 4;
+            ShipPanelAnimation.CurrentFrame += INFO_VISOR_PPS*CFPS::FPSControl.GetSpeedFactor();
         else {
             Surf_TextHolder = TTF_RenderText_Blended( Sommet18, "Skill", textColor );
             CSurface::OnDraw(Surf_Display, Surf_TextHolder, 1070 - ShipPanelAnimation.CurrentFrame, 360);
@@ -126,7 +149,7 @@ void CApp::OnRender() {
     else {
         if(ShipPanelAnimation.CurrentFrame > 0) {
             CSurface::OnDraw(Surf_Display, Surf_InfoVisor, 1000 - ShipPanelAnimation.CurrentFrame, 0);
-            ShipPanelAnimation.CurrentFrame -= 4;
+            ShipPanelAnimation.CurrentFrame -= INFO_VISOR_PPS*CFPS::FPSControl.GetSpeedFactor();
         }
     }
 

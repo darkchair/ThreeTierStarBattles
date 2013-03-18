@@ -13,7 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="../../../../Program Files/SDL/SDL-1.2.14/include" />
+					<Add directory="SDL/include" />
 				</Compiler>
 				<Linker>
 					<Add library="mingw32" />
@@ -21,7 +21,7 @@
 					<Add library="SDL_image" />
 					<Add library="SDL" />
 					<Add library="SDL_ttf" />
-					<Add directory="../../../../Program Files/SDL/SDL-1.2.14/lib" />
+					<Add directory="SDL/lib" />
 				</Linker>
 			</Target>
 			<Target title="Release">

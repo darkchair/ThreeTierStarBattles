@@ -46,7 +46,7 @@
 1361042914 source:c:\users\ian\documents\infinitespaceclone\csurface.cpp
 	"CSurface.h"
 
-1255796849 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl.h
 	"SDL_main.h"
 	"SDL_stdinc.h"
 	"SDL_audio.h"
@@ -65,14 +65,14 @@
 	"begin_code.h"
 	"close_code.h"
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_main.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_main.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_stdinc.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_stdinc.h
 	"SDL_config.h"
 	<sys/types.h>
 	<stdio.h>
@@ -98,17 +98,17 @@
 	<stdlib.h>
 	"close_code.h"
 
-1255796864 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_config.h
+1255800464 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_config.h
 	"SDL_platform.h"
 	<stdarg.h>
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_platform.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_platform.h
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\begin_code.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\begin_code.h
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\close_code.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\close_code.h
 
-1255796849 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_audio.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_audio.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_endian.h"
@@ -118,23 +118,23 @@
 	"begin_code.h"
 	"close_code.h"
 
-1255796849 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_error.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_error.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796849 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_endian.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_endian.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_mutex.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_mutex.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_thread.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_thread.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_mutex.h"
@@ -142,24 +142,24 @@
 	<process.h>
 	"close_code.h"
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_rwops.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_rwops.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796849 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_cdrom.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_cdrom.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796849 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_cpuinfo.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_cpuinfo.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796849 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_events.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_events.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_active.h"
@@ -170,63 +170,63 @@
 	"begin_code.h"
 	"close_code.h"
 
-1255796849 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_active.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_active.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796849 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_keyboard.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_keyboard.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_keysym.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_keysym.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_keysym.h
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_mouse.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_mouse.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_video.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_video.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_video.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"SDL_rwops.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796849 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_joystick.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_joystick.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_quit.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_quit.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_loadso.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_timer.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_loadso.h
 	"SDL_stdinc.h"
 	"SDL_error.h"
 	"begin_code.h"
 	"close_code.h"
 
-1255796850 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_version.h
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_version.h
 	"SDL_stdinc.h"
 	"begin_code.h"
 	"close_code.h"
 
-1307642292 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_image.h
+1307645894 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_image.h
 	"SDL.h"
 	"SDL_version.h"
 	"begin_code.h"
@@ -253,7 +253,7 @@
 1346185249 c:\users\ian\documents\infinitespaceclone\ship.h
 	<vector>
 
-1308272885 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_ttf.h
+1308276486 c:\program files\sdl\sdl-1.2.14\include\sdl\sdl_ttf.h
 	"SDL.h"
 	"begin_code.h"
 	"close_code.h"
@@ -337,4 +337,343 @@
 
 1362362933 source:c:\users\ian\documents\infinitespaceclone\strategypiece.cpp
 	"StrategyPiece.h"
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\canimation.cpp
+	"CAnimation.h"
+
+1363580765 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\canimation.h
+	<SDL/SDL.h>
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\capp.cpp
+	"CApp.h"
+
+1363635336 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\capp.h
+	<SDL/SDL.h>
+	<SDL/SDL_ttf.h>
+	<time.h>
+	"CEvent.h"
+	"CSurface.h"
+	"CAnimation.h"
+	"CFPS.h"
+	"EnemyInterceptor.h"
+	"Dialog.h"
+	"StrategyGame.h"
+	"TacticsGame.h"
+	"SkillGame.h"
+	"RhythmGame.h"
+	"MelodyGame.h"
+
+1363580765 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\cevent.h
+	<SDL/SDL.h>
+
+1363580765 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\csurface.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+
+1363634934 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\cfps.h
+	<SDL/SDL.h>
+
+1363580765 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\enemyinterceptor.h
+	<vector>
+	<stdio.h>
+	<string>
+	<stdlib.h>
+
+1363580765 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\dialog.h
+	<vector>
+	<string>
+	<stdio.h>
+
+1363580766 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\strategygame.h
+	"StrategyPiece.h"
+
+1363580766 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\strategypiece.h
+
+1363580766 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\tacticsgame.h
+	"TacticsTile.h"
+	<SDL/SDL.h>
+
+1363580766 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\tacticstile.h
+	"TacticsEntity.h"
+	<stdlib.h>
+
+1363580766 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\tacticsentity.h
+
+1363580766 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\skillgame.h
+	<SDL/SDL.h>
+
+1363580765 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\rhythmgame.h
+	<vector>
+	<stdio.h>
+	<SDL/SDL.h>
+	"CSurface.h"
+
+1363580765 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\melodygame.h
+	<string>
+	<stdio.h>
+
+1363634485 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\capp_oncleanup.cpp
+	"CApp.h"
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\capp_onevent.cpp
+	"CApp.h"
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\capp_oninit.cpp
+	"CApp.h"
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\capp_onloop.cpp
+	"CApp.h"
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\cevent.cpp
+	"CEvent.h"
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\cfps.cpp
+	"CFPS.h"
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\csurface.cpp
+	"CSurface.h"
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\dialog.cpp
+	"Dialog.h"
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\enemyinterceptor.cpp
+	"EnemyInterceptor.h"
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\engineering.cpp
+	"Engineering.h"
+
+1363580765 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\engineering.h
+	<vector>
+	<stdio.h>
+	<string>
+	<stdlib.h>
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\engineeringstate.cpp
+	"EngineeringState.h"
+
+1363580765 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\engineeringstate.h
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\melodygame.cpp
+	"MelodyGame.h"
+
+1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\rhythmgame.cpp
+	"RhythmGame.h"
+
+1363580766 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\ship.cpp
+	"Ship.h"
+
+1363580766 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\ship.h
+	<vector>
+
+1363580766 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\skillgame.cpp
+	"SkillGame.h"
+
+1363580766 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\strategygame.cpp
+	"StrategyGame.h"
+
+1363580766 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\strategypiece.cpp
+	"StrategyPiece.h"
+
+1363580766 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\tacticsentity.cpp
+	"TacticsEntity.h"
+
+1363580766 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\tacticsgame.cpp
+	"TacticsGame.h"
+
+1363580766 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\tacticstile.cpp
+	"TacticsTile.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1255800464 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_config.h
+	"SDL_platform.h"
+	<stdarg.h>
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_platform.h
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\begin_code.h
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\close_code.h
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_endian.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_keysym.h
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1308276486 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1307645894 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\sdl\include\sdl\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1363634934 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\capp_onrender.cpp
+	"CApp.h"
 

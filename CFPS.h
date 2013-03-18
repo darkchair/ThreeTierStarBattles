@@ -13,7 +13,7 @@ class CFPS {
         int     OldTime;
         int     LastTime;
 
-        float     SpeedFactor; //%speed the machine needs to run based on desired frame rate
+        float     SpeedFactor; //pixels per second to generate the desired frame rate
 
         int    NumFrames;
         int     Frames;

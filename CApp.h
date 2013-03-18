@@ -24,6 +24,8 @@
 #define SCREEN_WIDTH 1000
 #define SCREEN_HEIGHT 700
 
+#define INFO_VISOR_PPS 18
+
 
 
 class CApp : public CEvent {
@@ -35,7 +37,7 @@ class CApp : public CEvent {
     private:
         SDL_Surface*    Surf_Background;
         SDL_Surface*    Surf_ShipPanel;
-        CAnimation      ShipPanelAnimation;
+            CAnimation      ShipPanelAnimation;
         SDL_Surface*    Surf_Ship;
         SDL_Surface*    Surf_InfoVisor;
         SDL_Surface*    Surf_InterceptorPanel;
