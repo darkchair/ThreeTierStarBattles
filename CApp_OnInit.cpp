@@ -20,13 +20,13 @@ bool CApp::OnInit() {
         return false;
     }
 
-    Sommet16 = TTF_OpenFont("Sommet.ttf", 16);
-    Sommet18 = TTF_OpenFont("Sommet.ttf", 18);
-    Sommet24 = TTF_OpenFont("Sommet.ttf", 24);
-    Sommet30 = TTF_OpenFont("Sommet.ttf", 30);
+    Sommet16 = TTF_OpenFont("Fonts/Sommet.ttf", 16);
+    Sommet18 = TTF_OpenFont("Fonts/Sommet.ttf", 18);
+    Sommet24 = TTF_OpenFont("Fonts/Sommet.ttf", 24);
+    Sommet30 = TTF_OpenFont("Fonts/Sommet.ttf", 30);
 
     testDialog = new Dialog();
-    testDialog->openDialog("introDialog.txt");
+    testDialog->openDialog("Maps/introDialog.txt");
 
     int random = rand() % 5 + 1;
     for(int i=0; i<random; i++)

@@ -19,7 +19,7 @@ EnemyInterceptor::EnemyInterceptor() {
     //std::string temp2(itoa(rand()%5 + 1, buffer, 10));
     //temp.replace(4,1,temp2);
 
-    FILE* pathFile = fopen("path1.txt", "r");
+    FILE* pathFile = fopen("Maps/path1.txt", "r");
 
     int tempX, tempY;
     Coordinate tempPath;

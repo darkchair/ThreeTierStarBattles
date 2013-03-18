@@ -13,7 +13,7 @@ RhythmGame::RhythmGame() {
     currentRhythmDirections.assign(500, (directions)4);
 
     //Read rhythm from file
-    FILE* rhythmFile = fopen("rhythmDirections1.txt", "r");
+    FILE* rhythmFile = fopen("Maps/rhythmDirections1.txt", "r");
 
     int tempInt;
     int where = 0;
@@ -28,7 +28,7 @@ RhythmGame::RhythmGame() {
 
     fclose(rhythmFile);
 
-    rhythmFile = fopen("rhythmTimings1.txt", "r");
+    rhythmFile = fopen("Maps/rhythmTimings1.txt", "r");
 
     //int tempInt;
     where = 0;
