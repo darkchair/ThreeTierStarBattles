@@ -347,7 +347,7 @@
 1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\capp.cpp
 	"CApp.h"
 
-1363635336 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\capp.h
+1363908124 c:\users\ian\documents\threetierspacebattles\threetierstarbattles\capp.h
 	<SDL/SDL.h>
 	<SDL/SDL_ttf.h>
 	<time.h>
@@ -436,7 +436,7 @@
 1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\dialog.cpp
 	"Dialog.h"
 
-1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\enemyinterceptor.cpp
+1363638020 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\enemyinterceptor.cpp
 	"EnemyInterceptor.h"
 
 1363580765 source:c:\users\ian\documents\threetierspacebattles\threetierstarbattles\engineering.cpp

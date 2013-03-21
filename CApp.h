@@ -102,8 +102,15 @@ class CApp : public CEvent {
 
         void OnRender();
 
-            void drawTacticsEntities();
-            void drawStrategicPieces();
+            void drawDialog();
+            void drawTacticsGame();
+                void drawTacticsEntities();
+            void drawStrategyGame();
+                void drawStrategyPieces();
+            void drawRhythmGame();
+            void drawMainScreen();
+            void drawInfoVisorIn();
+            void drawInfoVisorBack();
 
         void OnCleanup();
 
