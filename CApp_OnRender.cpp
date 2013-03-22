@@ -27,7 +27,7 @@ void CApp::OnRender() {
         drawInfoVisorIn();
     }
     else {
-        drawInfoVisorBack();
+        drawInfoVisorOut();
     }
 
     SDL_Flip(Surf_Display);
@@ -155,6 +155,8 @@ void CApp::drawRhythmGame() {
 
         int currTime = SDL_GetTicks() - rhythmGame->startTime;
         int timeCount = currTime;
+        //For the rest of the current second display the notes onto
+        //the screen based on when they should be pressed
         for(int i = rhythmGame->nextNote; timeCount < currTime + 1000; i++) {
             /* The rhythm game 'songs' are made from two files, a Timings file
             and a Directions file. The timings file is a series of integers listing
@@ -166,13 +168,13 @@ void CApp::drawRhythmGame() {
             the Timings file.*/
 
             int width; int height;
-            int timing = rhythmGame->currentRhythmTimings[i];
+            int timing = rhythmGame->currentRhythmTimings[i]; //
             directions dir = rhythmGame->currentRhythmDirections[i];
 
             if(timing == -2)
-                break;
+                break;//Song is over
             else if(timing == -1)
-                timeCount += 1000;
+                timeCount += 1000;//Current second is over
             else if(timeCount + timing < currTime + 1000) {
 
                 width = 150*static_cast<int>(dir);
@@ -183,7 +185,7 @@ void CApp::drawRhythmGame() {
             }
 
         }
-
+        //Display number of milliseconds since the start of the game
         Surf_TextHolder = TTF_RenderText_Blended( Sommet18, itoa(static_cast<int>(SDL_GetTicks()) - rhythmGame->startTime, temp, 10), textColor );
         CSurface::OnDraw(Surf_Display, Surf_TextHolder, 850, 100);
         SDL_FreeSurface(Surf_TextHolder);
@@ -225,7 +227,7 @@ void CApp::drawInfoVisorIn() {
 
 }
 
-void CApp::drawInfoVisorBack() {
+void CApp::drawInfoVisorOut() {
 
     if(ShipPanelAnimation.CurrentFrame > 0) {
         CSurface::OnDraw(Surf_Display, Surf_InfoVisor, 1000 - ShipPanelAnimation.CurrentFrame, 0);

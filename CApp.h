@@ -110,7 +110,7 @@ class CApp : public CEvent {
             void drawRhythmGame();
             void drawMainScreen();
             void drawInfoVisorIn();
-            void drawInfoVisorBack();
+            void drawInfoVisorOut();
 
         void OnCleanup();
 
